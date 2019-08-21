@@ -1,0 +1,23 @@
+main {
+    background-image: url("/images/background_blossom.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 17%;
+}
+
+.footer-col {
+    margin-bottom: 6px;
+}
+
+.footer-heading {
+    text-align: right;
+}
+
+.footer-right p {
+    text-align: right;
+}
+
+.center-image {
+    margin: auto;
+    display: block;
+}
