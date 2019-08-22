@@ -11,13 +11,13 @@ time, brilliant:
 ![](https://imgs.xkcd.com/comics/frequentists_vs_bayesians.png){: .center-image}
 
 The reason why I like it so much is that it shows what is wrong with frequentist
-hypothesis testing in a very simple way, and why a Bayesian approach might be
-preferable. And mind you, this isn't just a philosophical issue devoid of
-real-world value. On the contrary, it has serious consequences: I am sure you
-heard of the replication chrisis plaguing some fields of science. Essentially,
-people realized that it is not possible to reach the same conclusions shown in
-some studies, and one of the culprits is misunderstanding and wrongful
-application of hypothesis testing and p-values.
+hypothesis testing very plainly, and why a Bayesian approach might be
+preferable. And mind you, this isn't just a philosophical issue, devoid of
+real-world value, we statisticians cannot agree on. On the contrary, it has
+serious consequences: I am sure you heard of the replication chrisis plaguing
+some fields of science. Essentially, people realized that it is not possible to
+reach the same conclusions shown in some studies, and one of the culprits is
+misunderstanding and wrongful application of hypothesis testing and p-values.
 
 Here, I just want to explain what is going on in that comic. The two scientists
 have a hypothesis they want to test (the sun exploded), and do so by gathering
@@ -77,7 +77,7 @@ $$
 (this is not the standard form, but I find it more illuminating and easier to
 remember), where the vertical bar indicates conditioning: $D\vert H$ means
 observing $D$ _after_ we observed (or assumed) $H$. With this notation, the
-frequentist reasoning can be summarized as follows: $p(D\vert\overline{H})$ is
+frequentist reasoning can be summarized as follows: "$p(D\vert\overline{H})$ is
 too low, so $H$ is true". Silly right?
 
 Let's now look at the Bayesian approach. We want to know $p(H\vert D)$, which
@@ -111,7 +111,7 @@ and we use Bayes' formula once again to get:
 $$
 \begin{align}
 p(D) &= p(D\cap H)+p(D\cap\overline H) \\
-&= p(D\vert H)p(H)+p(D\vert overline H)p(\overline H) \\
+&= p(D\vert H)p(H)+p(D\vert\overline H)p(\overline H) \\
 &= \frac{35}{36}10^{-6}+\frac{1}{36}\left(1-10^{-6}\right) \\
 &\approx \frac{1}{36}
 \end{align}
@@ -171,3 +171,8 @@ strong, no amound of data can make Bayesians change their mind. On the other
 hand, no prior at all can make them very guillible, almost like a child. You
 don't believe everything you read on the internet, do you? Then why do you
 believe everything your data tells you?
+
+An alternative interpretation of the reasoning conducted by the Bayesian
+scientist is that 50\$, or anything else, is a sure bet, for if the sun really
+exploded it will not matter that you lost it. This is the real genius behind
+this comic.
