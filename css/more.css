@@ -2,7 +2,7 @@ main {
     background-image: url("/images/background_blossom.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 17%;
+    background-size: contain;
 }
 
 .footer-col {
