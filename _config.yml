@@ -16,8 +16,7 @@
 title: Emilio's Blog
 #email: emilio.dorigatti@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Where I (plan to) talk about my Ph.D. and other tech stuff
-  that I feel like I want to share.
+  My Ph.D. and other tech stuff
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
