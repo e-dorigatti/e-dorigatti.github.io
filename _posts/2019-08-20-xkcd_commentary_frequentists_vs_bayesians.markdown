@@ -14,7 +14,7 @@ The reason why I like it so much is that it shows what is wrong with frequentist
 hypothesis testing very plainly, and why a Bayesian approach might be
 preferable. And mind you, this isn't just a philosophical issue, devoid of
 real-world value, we statisticians cannot agree on. On the contrary, it has
-serious consequences: I am sure you heard of the replication chrisis plaguing
+serious consequences: I am sure you heard of the replication crisis plaguing
 some fields of science. Essentially, people realized that it is not possible to
 reach the same conclusions shown in some studies, and one of the culprits is
 misunderstanding and wrongful application of hypothesis testing and p-values.
@@ -38,7 +38,7 @@ otherwise _nothing can be said_. Now, people mindlessly use 0.05 as a threshold
 to say that something is statistically significant, even though there is no
 particular reason to use this value and not another. The true story is that
 Fischer, who first developed the theory behind p-values, used this value as a
-cut-off to establish that somethig _fishy_ is going on (ha-ha) and worthy of
+cut-off to establish that something _fishy_ is going on (ha-ha) and worthy of
 more investigation. In practice, nowadays, the investigation just stops at that
 threshold, as if we found the truth and nothing more needs to be done. (Check
 [here](https://xkcd.com/882/) and [here](https://xkcd.com/1478/) for other xkcd
@@ -61,7 +61,7 @@ $D\Rightarrow H$, but just because of a quirk of the logical implication, namely
 that a false premise _does_ imply a false conclusion. Things cannot work like
 that in probability though: what if $D$ is _even more_ unlikely to happen if $H$
 is true? (if the sun exploded, we would have around 8 minutes to roll the dices
-before behing annihilated; it seems reasonable to assume that the scientists in
+before being annihilated; it seems reasonable to assume that the scientists in
 the comic are performing the experiment at least ten minutes after sunset,
 unless they are very anxious individuals).
 
@@ -135,7 +135,7 @@ the data is "produced". In this case, we know how the detector works, but in the
 general case you cannot write this down. What is the probability of that picture
 you took last week with your friends? This is why we usually try our best to get
 rid of this term whenever it pops out (i.e. always); usually we just ignore it,
-because we are always take the oservations $D$ as fixed, so $p(D)$ is just an
+because we are always take the observations $D$ as fixed, so $p(D)$ is just an
 annoying constant. In other cases we can actually remove it. Note that $p(D\vert
 H)$ is a lot easier to compute, because it corresponds to our _model_ of the
 world, i.e. to how we _assume_ the data is generated. On the other hand, $p(D)$
@@ -167,8 +167,8 @@ conclusion. It can be weird to let our prior belief (or biases) change our
 conclusions. Our dream is to only use data to make decisions. After all, math is
 unbiased, right? Why not let the data speak for itself? As this comic shows,
 this is simply not possible. Sure, priors are subjective, and when they are too
-strong, no amound of data can make Bayesians change their mind. On the other
-hand, no prior at all can make them very guillible, almost like a child. You
+strong, no amount of data can make Bayesians change their mind. On the other
+hand, no prior at all can make them very gullible, almost like a child. You
 don't believe everything you read on the internet, do you? Then why do you
 believe everything your data tells you?
 

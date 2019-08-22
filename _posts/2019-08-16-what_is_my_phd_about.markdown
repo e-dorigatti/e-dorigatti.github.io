@@ -53,14 +53,16 @@ The vaccines that I design are made from _epitopes_. To understand what they
 are, I need to introduce the basic functioning of the immune system. Among the
 main actors of the adaptive immune system are T cells, or T lymphocytes (from
 lymph, the fluid of the Lymphatic System, and kyto, meaning cell); they float
-around the body and inspect other cells to determine wheter they are good or
+around the body and inspect other cells to determine whether they are good or
 bad. On their surface they have thousands of receptors, each of which can bind
 to a specific sequence of aminoacids, so-called _epitope_. Binding means that
 the two molecules, the receptor and the epitope, attract each other and stick
 together just like magnets. This step is very selective, because these two
-molecules must have matching complementary shapes (think like tetris). As soon
+molecules must have matching complementary shapes (think like Tetris). As soon
 as a receptor on a T cell binds to something, the T cell initiates a response
-from the immune system to deal with the issue. Therefore, an epitope is a short
+from the immune system to deal with the issue. A part of the response is to
+remember that particular receptor and create more T cells with it, so that it
+will be easier to spot the same pathogen. Therefore, an epitope is a short
 sequence of aminoacids (around 10 or 20) that, when recognized by a T cell,
 triggers the immune system.
 
