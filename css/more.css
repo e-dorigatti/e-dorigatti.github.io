@@ -1,10 +1,17 @@
-main {
+body {
     background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 100%), url("/images/background_blossom.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
 }
 
+footer {
+    background: rgba(255, 255, 255, 1.0);
+}
+
+header {
+    background: rgba(255, 255, 255, 1.0);
+}
 
 .footer-col {
     margin-bottom: 6px;
