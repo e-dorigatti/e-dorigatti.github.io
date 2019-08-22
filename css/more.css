@@ -1,12 +1,17 @@
 main {
-    background: url("/images/background_blossom.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 20%,
+        rgba(255, 255, 255, 1) 80%,
+        rgba(255, 255, 255, 0) 100%
+    ), url("/images/background_blossom.png");
 }
 
 .wrapper {
-    background: rgba(255,255,255,1);
 }
 
 .footer-col {
