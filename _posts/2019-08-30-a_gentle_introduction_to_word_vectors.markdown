@@ -1,0 +1,120 @@
+---
+layout: post
+title:  "A gentle introduction to word vectors"
+date:   2019-09-01 12:00:00 +0200
+categories: jekyll update
+---
+
+
+During the research I am conducting for my next project I stumbled upon the
+intriguing idea of applying tools developed for Natural Language Processing
+(NLP) to bioinformatics. After all, the comparison seems to hold up: you can
+think of the DNA as a collection of books (genes), each of which contains
+several chapters (proteins) related to a certain topic.
+
+The project I just mentioned will deal with protein classification (or
+regression), which is analogous to sentence classification in NLP. That field
+was turned upside down in the last years due to the introduction of Deep
+Learning, and, in particular, of distributed word representations; going from
+words/sentences/documents to aminoacids/proteins/genes is not such a big leap,
+conceptually. 
+
+Since I want this blog to be useful to non-technical people as well, I will
+devote this article to a brief, high-level and to-the-point overview of what is
+going on, written in plain english (a bit like [this](https://xkcd.com/1133/)).
+Of course, it will be far from exhaustive, because (a) otherwise it would
+require a book or two and (b) the internet is already full of beginner-level
+introductory material. I just want non-tecnical readers to leave this page
+feeling like they have the main intuition and understanding of what is going on.
+(addendum: I initially planned this to be a just a few paragraphs before the
+technical material, but it turned out much longer than I had expected, so it is
+now its own blog post).
+
+The only thing computers know are numbers; audio, images, text, for a computer
+everything is just a bunch of numbers. Therefore, if we want to make a computer
+intelligent, we have to find ways of representing things with numbers. Once we
+have done that, we can use mathematical formulas to describe the process of
+learning: this means that a computer's knowledge is encoded in numbers, and said
+computer thinks by transforming these numbers with math.
+
+This blog post talks about different ways of transforming the words of English,
+German, and any other _natural_ language, into numbers, so that computers can
+try to understand text. In particular, I will describe several works that
+applied these methods to aminoacids and proteins instead of words and documents.
+As it turns out, they work in very similar ways. For example, they both have
+_syntactic_ rules that say which sequences of tokens (words or aminoacids) are
+valid sentences/proteins, and they both require understanding dependencies
+between distant tokens, e.g. what is the subject and what is the object versus
+which aminoacids will stick together when the protein folds itself. And the
+similarities do not stop here. So it is not surprising that linguistcs tools
+have been applied to genomics (the study of DNA) ever since they were developed
+back in the eighties.
+
+I am going to conclude this section with a brief history of the different
+methods to transform words into numbers. In fact, we associate every word with a
+list of numbers, which we call _vector_, and we want every word to have the same
+number of numbers, because this is much simpler to deal with in math. Initially,
+the size of the vector was the same as the size of the vocabulary, and every
+position in this vector corresponds to a word; the vector associated to a
+certain word is then full of zeroes except in the position of that word, in
+which we put a one. For example, if we use alphabetical order, the first word is
+_a_, so the vector for _a_ is 1 followed by a lot of zeroes. The second word is
+_able_, so the vector for able is 0, then 1, then a lot of zeroes. And so on.
+Since there are too many words, we only consider the first few tens of thousands
+of most frequent words (what a native person knows).
+
+This method, called one-hot or sparse encoding, has two main drawbacks: first,
+the resulting vectors are very very big, and second all words have the same
+distance: either two differences or none (if they are the same word). This is
+very bad, because in mathematics distances can be used in a lot of interesting
+ways; intuitively, we want the vector for _huge_ to be closer (more similar) to
+_massive_'s vector than to _tiny_'s.
+
+A more advanced way of assigning vectors to words is TF-IDF, which means "term
+frequency-inverse document frequency", and reflects the two factors that
+influence the vectors. In this case, we need a collection of documents, such as
+pages of Wikipedia to start with; TF-IDF then tries to find out which words are
+"important" in a given page. The idea is very simple: a word is important for a
+given page if it appears frequently in it, and not very frequently everywhere
+else. For example, the word _the_ appears very frequently everywhere, so it is
+not very important (it does not convey any meaning); the word _Stockholm_
+appears almost 400 times in its Wikipedia page, and not very frequently in most
+of the other six million articles written in English, so we can reasonably
+conclude that the page titled _Stockholm_ talks about _Stockholm_ (duh). If you
+now do this for every other article, you have a list of TF-IDF scores of the
+word _Stockholm_, and that is its vector. Now two words are similar if they are
+important in the same pages and not very important in different pages. This is
+the heart of the _distributional hypothesis_, an assumption that underlies much
+of NLP: words that appear in the same context tend to have have the same
+meaning.
+
+And finally now we leap to the the first technique, called continuous bag of
+words (CBOW), that sparked the current state of the art, the so-called
+_distributed representations_. These vectors live in what we call a _vector
+space_, which means that they can be added or subtracted (element by element),
+stretched or contracted, and still result in a vector for a word. The most
+famous example of this is that _v(king)-v(man)+v(woman)=v(queen)_, with
+_v(word)_ being the vector for a certain word. This kind of analogies holds up
+for a lot of other categories, as well: _v(Paris)-v(France)+v(Tokyo)=v(Japan)_,
+_v(Einstein)-v(scientist)+v(Picasso)=v(artist)_, and so on (keep in mind it is
+not _exact_ equality, and sometimes you get another vector that is closer than
+what you'd expect). If you consider each number in a vector as the distance to
+move in a certain direction, you find that every vector corresponds to a point
+in space (suppose you always start at the same spot). What these analogies mean,
+is that in order to go from _v(king)_ to _v(queen)_ you have to move in the same
+direction and for the same distance that you need to reach _v(woman)_ starting
+from _v(man)_; essentially, there is a direction associated with gender, a
+direction associated with capital-state, one for scientist-artist, and so on.
+
+The vector for a word is constructed by asking the computer to compute it by
+combining the vectors of surrounding words using only those operations; the
+computer initially starts with random vectors and changes them so that this task
+can be accomplished. If you have ever learned a foreign language at school, I am
+sure you remember those fill-the-blank exercises: "Mary bought _____ at the
+supermarket". After seeing millions of sentences and billions of words, the
+computer is able to finally understand their meaning.
+
+By using word vectors and combining them in disparate ways, computers can then
+learn to translate between languages, answer to our questions, search things we
+ask for, and much more. This is, pretty much, how we teach computers to read in
+2019.
