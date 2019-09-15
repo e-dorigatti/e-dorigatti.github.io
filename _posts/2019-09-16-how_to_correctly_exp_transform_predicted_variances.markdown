@@ -37,7 +37,7 @@ $$
 $$
 
 Which means that the equilibrium point is for the model to predict a variance
-equal to half of the mean squared error. Coupled with Monte-Carlo dropout to
+equal to half of the squared error for that point. Coupled with Monte-Carlo dropout to
 estimate the epistemic uncertainty of the model, one can get a nice holistic
 uncertainty estimation for the predictions fairly easily[^kendall_what_2017].
 
