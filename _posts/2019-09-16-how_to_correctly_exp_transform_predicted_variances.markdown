@@ -20,10 +20,26 @@ $$
 With $f(\cdot)$ and $g(\cdot)$ the model predictions for mean and standard
 deviation (in practice, it is better to have the model predict $\ln(g(\hat
 x)^2)$ instead). This is quite cool, as the model is able to learn a different
-variance for every point in a completely unsupervised way. Coupled with
-Monte-Carlo dropout to estimate the epistemic uncertainty of the model, one can
-get a nice holistic uncertainty estimation for the predictions fairly
-easily[^kendall_what_2017].
+variance for every point in a completely unsupervised way. Too see this, fix the
+mean squared error, then set the derivative of the log likelihood with respect
+to $g(\hat x)^2$ to zero:
+
+$$
+\begin{align}
+\frac{\partial}{\partial g(\hat x)^2} \ln p(\hat y | \hat x) = 0
+& \Longleftrightarrow 
+-\frac{\left(\hat y-f(\hat x)\right)^2}{2}
+\cdot -\frac{2}{g(\hat x)^4}-\frac{1}{2 g(\hat x)^2} = 0 \\
+& \Longleftrightarrow 
+\frac{\left(\hat y-f(\hat x)\right)^2}{g(\hat x)^2}=\frac 1 2 \\
+& \Longleftrightarrow  g(\hat x)^2=\frac 1 2 \left(\hat y - f(\hat x)\right)^2
+\end{align}
+$$
+
+Which means that the equilibrium point is for the model to predict a variance
+equal to half of the mean squared error. Coupled with Monte-Carlo dropout to
+estimate the epistemic uncertainty of the model, one can get a nice holistic
+uncertainty estimation for the predictions fairly easily[^kendall_what_2017].
 
 A common operation done is to standardize features and targets by removing the
 mean and dividing by the standard deviation. Another commonly done normalization
