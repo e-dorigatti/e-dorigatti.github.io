@@ -104,7 +104,7 @@ Now that you obtained the predicted mean and standard deviation for $\hat y$ it
 would be tempting to just add and subtract twice the standard deviation to the
 mean to get a nice 95% confidence interval for the prediction. Not so fast!
 That only works for normally distributed random variables, which our $\hat z$ is
-not. Luckliy, though, $\tilde z$ is, so a valid 95%-ish confidence interval for
+not. Luckiliy, though, $\tilde z$ is, so a valid 95%-ish confidence interval for
 the prediction is $\exp(\mu(\tilde z)\pm1.96\sigma(\tilde z))$.
 
 The general formula for a quantile $F$ (between 0 and 1) is $\exp(\mu(\tilde

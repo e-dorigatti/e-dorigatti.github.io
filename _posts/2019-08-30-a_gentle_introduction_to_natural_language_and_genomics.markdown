@@ -16,15 +16,15 @@ The project I just mentioned will deal with protein classification (or
 regression), which is analogous to sentence classification in NLP. That field
 was turned upside down in the last years due to the introduction of Deep
 Learning, and, in particular, of distributed word representations; going from
-words/sentences/documents to aminoacids/proteins/genes is not such a big leap,
+words/sentences/documents to amino acids/proteins/genes is not such a big leap,
 conceptually. 
 
 Since I want this blog to be useful to non-technical people as well, I will
 devote this article to a brief, high-level and to-the-point overview of what is
-going on, written in plain english (a bit like [this](https://xkcd.com/1133/)).
+going on, written in plain English (a bit like [this](https://xkcd.com/1133/)).
 Of course, it will be far from exhaustive, because (a) otherwise it would
-require a book or two and (b) the internet is already full of beginner-level
-introductory material. I just want non-tecnical readers to leave this page
+require a book or two and (b) the Internet is already full of beginner-level
+introductory material. I just want non-technical readers to leave this page
 feeling like they have the main intuition and understanding of what is going on.
 (addendum: I initially planned this to be a just a few paragraphs before the
 technical material, but it turned out much longer than I had expected, so it is
@@ -46,7 +46,7 @@ translation, sarcasm detection, and many more. The focus of Genomics is,
 instead, the study of genes; the main tasks are finding the function of proteins
 and their structure once folded, how they interact with each other, how genes
 affect the way we look, and so on. Very briefly, a gene is a strand of DNA, a
-sequence of aminoacids that encode a protein. Proteins are produced by copying
+sequence of amino acids that encode a protein. Proteins are produced by copying
 the corresponding gene, and, once produced, they fold in a 3D structure; this
 structure is what allows the proteins to fulfill its purpose.
 
@@ -55,20 +55,20 @@ these tasks are approached can be similar, because we realized that DNA behaves
 similarly to a language and has a similar structure. For example, in both cases
 there are long range dependencies. Subject and object can be at the opposite
 ends of a sentence, but they must be linked to understand the meaning of that
-sentence. Similarly, some aminoacids, the words of DNA, can be far apart in the
+sentence. Similarly, some amino acids, the words of DNA, can be far apart in the
 DNA sequence, but once protein encoded by that sequence is produced and folded,
-those aminoacids end up sticking to each other to keep the protein structure
+those amino acids end up sticking to each other to keep the protein structure
 together. Understanding these long range dependencies and the 3D structure of
 proteins helps us understand what their functions are and how they relate to
 each other. Synonyms are another common feature between natural language and
-DNA; some aminoacids can be replaced with others without altering the folding
+DNA; some amino acids can be replaced with others without altering the folding
 (and the function) of the resulting protein, while others are fundamental and
 cannot be changed without changing the protein. Moreover, there are certain
-sequences of aminoacids that are found in many different genes, and that fold in
-the same way, while other combinations of aminoacids are instead very rare.
-Actually, aminoacids are actually composed by three bases (C,T,A,G) each; this
+sequences of amino acids that are found in many different genes, and that fold in
+the same way, while other combinations of amino acids are instead very rare.
+Actually, amino acids are actually composed by three bases (C,T,A,G) each; this
 means that there is some redundancy, since several triplets all map to the same
-aminoacid. There are also combinations to indicate the beginning and ending of a
+amino acid. There are also combinations to indicate the beginning and ending of a
 protein.
 
 There is much more that we know, and even more that we do not yet know, about
@@ -92,13 +92,13 @@ transforming these numbers with math.
 This blog post talks about different ways of transforming the words of English,
 German, and any other _natural_ language, into numbers, so that computers can
 try to understand text. In particular, I will describe several works that
-applied these methods to aminoacids and proteins instead of words and documents.
+applied these methods to amino acids and proteins instead of words and documents.
 As it turns out, they work in very similar ways. For example, they both have
-_syntactic_ rules that say which sequences of tokens (words or aminoacids) are
+_syntactic_ rules that say which sequences of tokens (words or amino acids) are
 valid sentences/proteins, and they both require understanding dependencies
 between distant tokens, e.g. what is the subject and what is the object versus
-which aminoacids will stick together when the protein folds itself. And the
-similarities do not stop here. So it is not surprising that linguistcs tools
+which amino acids will stick together when the protein folds itself. And the
+similarities do not stop here. So it is not surprising that linguistics tools
 have been applied to genomics (the study of DNA) ever since they were developed
 back in the eighties.
 

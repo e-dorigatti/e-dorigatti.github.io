@@ -40,12 +40,12 @@ disable the immune system. This is where vaccines come into play.
 You might have heard that vaccines are just an injection of dead bacteria, and
 the first vaccines actually worked like that (consider that the Chinese started
 doing this over one thousand years ago). Newer types of vaccines, however, are
-designed using computers and can be synthetized in the laboratory, and this is
+designed using computers and can be synthesized in the laboratory, and this is
 what I study. I will go in much more depth on this process in later blog posts,
 for now it suffices to say that such a vaccine is composed by billions of copies
 of the same molecule, or a handful of different molecules, and the building
-blocks of these molecules are aminoacids. Designing a vaccine, therefore, means
-coming up with a sequence of aminoacids with desirable properties, and then
+blocks of these molecules are amino acids. Designing a vaccine, therefore, means
+coming up with a sequence of amino acids with desirable properties, and then
 producing it in a lab. I only study the first step, once I settle on a certain
 sequence I pass it to a company that produces the real molecules and tests them.
 
@@ -55,7 +55,7 @@ main actors of the adaptive immune system are T cells, or T lymphocytes (from
 lymph, the fluid of the Lymphatic System, and kyto, meaning cell); they float
 around the body and inspect other cells to determine whether they are good or
 bad. On their surface they have thousands of receptors, each of which can bind
-to a specific sequence of aminoacids, so-called _epitope_. Binding means that
+to a specific sequence of amino acids, so-called _epitope_. Binding means that
 the two molecules, the receptor and the epitope, attract each other and stick
 together just like magnets. This step is very selective, because these two
 molecules must have matching complementary shapes (think like Tetris). As soon
@@ -63,7 +63,7 @@ as a receptor on a T cell binds to something, the T cell initiates a response
 from the immune system to deal with the issue. A part of the response is to
 remember that particular receptor and create more T cells with it, so that it
 will be easier to spot the same pathogen. Therefore, an epitope is a short
-sequence of aminoacids (around 10 or 20) that, when recognized by a T cell,
+sequence of amino acids (around 10 or 20) that, when recognized by a T cell,
 triggers the immune system.
 
 The vaccines that I design are made by assembling epitopes together, and the
@@ -127,6 +127,6 @@ safety margins.
 
 So that was quite a lot of information! To sum up, my research focuses on
 methods to design synthetic vaccines using computers. These vaccines are made
-from epitopes, which are short sequences of aminoacids that trigger a response
+from epitopes, which are short sequences of amino acids that trigger a response
 from the body, and these methods should be able to tell us how confident they
 are that the designed vaccine is safe and effective.

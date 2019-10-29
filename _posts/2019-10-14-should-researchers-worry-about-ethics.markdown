@@ -4,7 +4,7 @@ title: "(How) should researchers worry about ethics?"
 layout: post
 ---
 
-A few days ago I saw a tweet mentionin that NLP researchers should seriously
+A few days ago I saw a tweet mentioning that NLP researchers should seriously
 start worrying about the ethical implications of their discoveries. That is
 easier said than done.
 
@@ -55,7 +55,7 @@ have much trouble replacing a few percents of their workforce, and complying was
 just a PR move after all.
 
 What if there was an external entity to prevent technology misuse? Just like the
-police is supposed to prevent crime, this ogranization would monitor companies
+police is supposed to prevent crime, this organization would monitor companies
 and prevent them from doing evil things(TM). While I am sure such organizations
 exist, I cannot comment on their effectiveness besides noting that there are
 several companies doing evil things in plain sight. This might be caused by the
@@ -79,7 +79,7 @@ not forget that companies are able to alter the governments' course of action by
 lobbying for their (companies', not the government's, or the people's) best
 interests. I am convinced that the more money one wants to make, the more evil
 they should be; _after a certain point_, profits can only be increased with more
-and more unetical actions. Hence, very evil players can always outbet their
+and more unethical actions. Hence, very evil players can always out-bet their
 opponents. It is hard to bring positive change, when the world only understands
 money.
 
@@ -113,7 +113,7 @@ to attack and destroy itself. In practice, it would not be so easy, as the body
 does have safeguards in place to suppress autoimmunity, but with some
 modifications they could be accounted for in the design of such a drug. As of
 today, however, this would require a considerable amount of experimental
-research so this possiblity is quite remote, for now. Does this stop me from
+research so this possibility is quite remote, for now. Does this stop me from
 working on it? No, it's ridiculous. What if, for some reason, my discoveries
 turn out to work better on a certain part of the population? Or if my employer
 wants us to focus our efforts on the European population? Or if they want to
