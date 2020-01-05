@@ -29,15 +29,15 @@ $$
 \frac{\partial}{\partial g(\hat x)^2} \ln p(\hat y | \hat x) = 0
 & \Longleftrightarrow 
 -\frac{\left(\hat y-f(\hat x)\right)^2}{2}
-\cdot -\frac{2}{g(\hat x)^4}-\frac{1}{2 g(\hat x)^2} = 0 \\
+\cdot -\frac{2}{g(\hat x)^4}-\frac{2}{2 g(\hat x)^2} = 0 \\
 & \Longleftrightarrow 
-\frac{\left(\hat y-f(\hat x)\right)^2}{g(\hat x)^2}=\frac 1 2 \\
-& \Longleftrightarrow  g(\hat x)^2=\frac 1 2 \left(\hat y - f(\hat x)\right)^2
+\frac{\left(\hat y-f(\hat x)\right)^2}{g(\hat x)^2}=1 \\
+& \Longleftrightarrow  g(\hat x)^2=\left(\hat y - f(\hat x)\right)^2
 \end{align}
 $$
 
 Which means that the equilibrium point is for the model to predict a variance
-equal to half of the squared error for that point. Coupled with Monte-Carlo dropout to
+equal to the squared error for that point. Coupled with Monte-Carlo dropout to
 estimate the epistemic uncertainty of the model, one can get a nice holistic
 uncertainty estimation for the predictions fairly easily[^kendall_what_2017].
 
