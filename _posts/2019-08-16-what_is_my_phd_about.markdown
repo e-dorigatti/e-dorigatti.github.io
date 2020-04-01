@@ -9,6 +9,7 @@ So I have started my PhD last month, after a not-so-good experience in the
 consulting industry that prompted me to reflect deeply on my values and goals. I
 thought writing a blog would be a good way to improve my communication skills
 and further disseminate my research beyond specialized conferences and journals.
+<!-- more -->
 Perhaps one day I will write about these reflections in more depth, but for now
 it's enough t say that I believe one of my responsibilities as a scientist is to
 spread my discoveries to those outside of my field. I still don't have a precise

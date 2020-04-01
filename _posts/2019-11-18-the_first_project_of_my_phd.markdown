@@ -6,7 +6,7 @@ date: 2019-11-18 12:00:00 +0200
 
 I am in the process of publishing the first paper I wrote in my PhD, and, as
 promised, with this post I am making an effort to explain this work to a less
-technical audience. I start, however, by quoting the abstract:
+technical audience. <!-- more --> I start, however, by quoting the abstract:
 
 > Epitope-based vaccines have revolutionized vaccine research in the last
 > decades. Due to their complex nature, bioinformatics plays a pivotal role in

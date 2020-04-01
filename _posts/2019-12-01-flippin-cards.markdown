@@ -13,6 +13,8 @@ Here's a riddle for you:
 > number of cards facing up. As it is dark in the room, you cannot see anything,
 > and the cards cannot be distinguished by touch. How can you do it?
 
+<!-- more -->
+
 No tricks are necessary, it can be done with logic alone. You might want to take
 some time to think it through, before reading my solution.
 

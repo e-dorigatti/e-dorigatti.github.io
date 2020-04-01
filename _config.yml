@@ -26,10 +26,12 @@ github_username:  e-dorigatti
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-org
+show_excerpts: true
+excerpt_separator: <!-- more -->
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

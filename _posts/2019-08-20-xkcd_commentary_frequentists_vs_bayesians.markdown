@@ -8,6 +8,8 @@ categories: jekyll update
 I found [this xkcd comic](https://xkcd.com/1132/) hilarious and, at the same
 time, brilliant:
 
+<!-- more -->
+
 ![](https://imgs.xkcd.com/comics/frequentists_vs_bayesians.png){: .center-image}
 
 The reason why I like it so much is that it shows what is wrong with frequentist

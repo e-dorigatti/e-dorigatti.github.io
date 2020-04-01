@@ -1,13 +1,13 @@
 ---
 date: 2019-09-16 12:00:00 +0200
-title: "How to correctly exp-transform predicted variances"
+title: "How to predict aleatoric uncertainty for log-transformed data"
 layout: post
 ---
 
 Suppose you want to train a neural network (or any other model) on a regression
 problem with heteroscedastic noise (i.e. data-dependent); a way to do that is to
-have the model predict both mean and variance of the
-output[^nix_estimating_1994], and include this variance in the log likelihood.
+have the model predict both mean and variance of the output, and include this
+variance in the log likelihood.<!-- more -->[^nix_estimating_1994]
 For normally distributed errors, this amounts to adding the predicted log
 variance to the loss function and scaling the mean squared error:
 

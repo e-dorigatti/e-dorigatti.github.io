@@ -5,11 +5,10 @@ date: 2020-01-30 09:00:00 +0200
 markdown: kramdown
 ---
 
-## Introduction
 Last month, a new epidemic started in Wuhan, China, and quickly spread all over
 the world. As of now, there are reports of a few companies rushing to develop,
-or having already developed, a vaccine for this virus.[^1] [^2] [^3] [^4] Thanks
-to recent technological progress, the development of new vaccines is fairly
+or having already developed, a vaccine for this virus.<!-- more -->[^1] [^2] [^3] [^4]
+Thanks to recent technological progress, the development of new vaccines is fairly
 quick, and clinical trials can start only a few months after the pathogen was
 sequenced.
 

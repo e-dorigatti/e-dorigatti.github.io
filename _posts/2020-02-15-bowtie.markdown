@@ -1,5 +1,5 @@
 ---
-title: "Why a one-hidden-layer neural network cannot exactly fit a bow tie, and how to approximate it"
+title: "Limits of single-hidden-layer neural networks"
 layout: post
 date: 2020-02-15 09:00:00 +0200
 markdown: kramdown
@@ -12,6 +12,8 @@ theorem was proven, they still wanted to know which kind of decision regions
 (i.e. regions in the input space classified as _positive_) can be exactly
 reproduced, and which ones can only be approximated, with a neural network with
 a single hidden layer.
+
+<!-- more -->
 
 Before the activation, a neuron defines a hyper-plane in its input space, and
 assigns positive value to points on one side and negative value to points on the

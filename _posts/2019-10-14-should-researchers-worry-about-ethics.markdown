@@ -8,6 +8,8 @@ A few days ago I saw a tweet mentioning that NLP researchers should seriously
 start worrying about the ethical implications of their discoveries. That is
 easier said than done.
 
+<!-- more -->
+
 First things first, I think we can all agree on the fact that technology itself
 is _amoral_. Technology is, ultimately, based on mathematics and manipulation of
 numbers (this is what computers do). Formulas and algorithms are neither good or

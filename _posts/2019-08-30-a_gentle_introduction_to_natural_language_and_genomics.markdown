@@ -12,6 +12,8 @@ intriguing idea of applying tools developed for Natural Language Processing
 think of the DNA as a collection of books (genes), each of which contains
 several chapters (proteins) related to a certain topic.
 
+<!-- more -->
+
 The project I just mentioned will deal with protein classification (or
 regression), which is analogous to sentence classification in NLP. That field
 was turned upside down in the last years due to the introduction of Deep

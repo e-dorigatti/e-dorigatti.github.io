@@ -12,6 +12,8 @@ tbody:nth-child(even) > tr > td { background: #f8f8f8;  border: none; }
 In this post, I am going to reflect on my past six months as a PhD student: what
 went right, what went wrong, what was good, and what was bad.
 
+<!-- more -->
+
 ## Overview
 For a detailed description of the topic of my PhD, see [this post]({% post_url
 2019-08-16-what_is_my_phd_about %}) I wrote some time ago. Briefly, I study new
