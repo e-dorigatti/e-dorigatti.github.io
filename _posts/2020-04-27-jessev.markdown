@@ -7,8 +7,8 @@ highlighter: rouge
 ---
 
 We have just submitted a paper describing a new framework for vaccine design.
-Similarly to our [previous project]({{ post_url
-2019-11-18-the_first_project_of_my_phd }}), the main innovation here is that we
+Similarly to our [previous project]({% post_url
+2019-11-18-the_first_project_of_my_phd %}), the main innovation here is that we
 take a holistic approach to the design problem, and show how this improves the
 end result.
 
