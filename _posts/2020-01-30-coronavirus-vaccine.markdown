@@ -94,7 +94,7 @@ surrounding the virus with a sort of bag which is then pulled inside the cell.
 This causes a change in the chemical substances surrounding the virus,
 triggering separation of S1 and S2. S2 is now free to merge with the bag and
 free the content of the virus inside the host cell. This process is identical to
-what happens on the outside of the cell. [^15] 
+what happens on the outside of the cell. [^15]
 
 Note: I am a bit confused about this. Two papers [^15] [^20] indicate that these
 two mechanisms are separate, and the virus is able to perform both according to
@@ -194,6 +194,13 @@ the infected cell. The same authors also use the same tools to identify protease
 inhibitors designed for SARS that are effective for the novel Coronavirus. [^23]
 Finally, a study [^29] identifies another antibiotic used for Ebola, SARS and MERS
 that works for the Coronavirus, preventing cellular entry.
+
+## Conclusion
+After this point, I have not seen any more new interesting findings related to
+vaccines, and, to be honest, I stopped following preprints so closely. I focused
+on more reputable and informative sources and I still learned a lot even though
+I lost the novelty aspect of preprints. Anyway, the follow-up to this post is
+[here]({% post_url 2020-05-03-covid19-vaccine-tech %}), enjoy.
 
 ## References
 [^1]: [https://www.precisionvaccinations.com/inovio-ino-4800-coronavirus-vaccine-candidate-matched-novel-coronavirus-outbreak-discovered-china](https://www.precisionvaccinations.com/inovio-ino-4800-coronavirus-vaccine-candidate-matched-novel-coronavirus-outbreak-discovered-china)
