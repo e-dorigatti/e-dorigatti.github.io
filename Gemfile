@@ -30,3 +30,5 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # org mode
 gem "jekyll-org", ">=1.0.2"
+
+gem "activesupport", ">= 6.0.3.1"  # newer version containing security fix
