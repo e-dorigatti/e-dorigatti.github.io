@@ -47,51 +47,6 @@ effective vaccines.
 You can find the paper on [biorxiv](https://www.biorxiv.org/content/10.1101/2020.04.25.060988v1), and the software implementation on
 [GitHub](https://github.com/SchubertLab/JessEV).
 
-## Results
-In the figure below, you see a vaccine designed sequentially with
-state-of-the-art tools on the top, namely OptiTope[^3] for epitope selection and
-OptiVac[^4] for epitope assembly, and, on the bottom, a vaccine designed with
-our framework. The charts show the cleavage probability for each position in the
-vaccine, as estimated by the simulations. The spacer sequences are highlighted
-in bold, and the color of the bar indicates whether cleavage in a certain
-position is good (green) or bad (orange).
-
-![results](/images/spacers/results.png){: .center-image}
-
-As you can see, the vaccine designed with our solution presents larger cleavage
-probabilities between spacers and epitopes (the green bars), and smaller
-cleavage probability inside the epitopes and spacers (orange bars). The
-immunogenicity reported in the title is the sum of the immunogenicities of the
-epitopes. It is much lower for our vaccine, because we had to select epitopes
-that have low cleavage probability in the middle. This is something we cannot
-influence with the spacers, according to our cleavage model, therefore we have a
-limited choice of epitopes that we can use in the vaccine. However, the fact
-that we select epitopes based on their probability of not being cut in the
-middle is one of the strengths our approach, something which is not possible
-with current methods, and, I cannot stress it enough, the main benefit of our
-approach.
-
-The second number reported in the title is the expected number of epitopes
-recovered correctly after proteasomal cleavage. On average, less than one
-epitope is recovered for the sequential design, while our simultaneous approach
-raises this number to more than three. It should be clear now that this increase
-is possible because we selected epitopes that are not as likely to be cut in the
-middle.
-
-The last number is the effective immunogenicity, which is simply the average
-immunogenicity of the epitopes weighted by their recovery probability. Even
-though the individual epitopes selected by our framework are not as immunogenic,
-they have a greater overall effect simply by being recovered more frequently.
-According to this metric, the vaccines designed by our simultaneous approach are
-twice as effective as vaccines designed with the sequential approach.
-
-In the paper we go deeper and analyze these metrics, as well as coverage of
-antigens and patients, varying the "harshness" of the proteasome, i.e. how eager
-it is to cleave proteins. We also study which thresholds are best in which
-situation, and which spacers are frequently produced by our framework. We also
-use a different, more advanced, cleavage prediction tool, to validate our
-results.
-
 ## Background
 Designing a vaccine requires at least three steps: discovering all the epitopes
 from the target antigens, choosing which ones to put in the vaccine, and
@@ -99,29 +54,29 @@ finding a good way to assemble them in the actual vaccine.
 
 ![vaccine design pipeline](/images/spacers/pipeline.png){: .center-image}
 
-To clarify the terminology, _antigens_ are the bad guys, agents that cause
+To clarify the terminology, **antigens** are the bad guys, agents that cause
 trouble, i.e. disease, for example viruses and bacteria. The type of vaccines
 that we focus on in this work is just a sequence of epitopes.
 
-Epitopes are small pieces of these antigens that are recognized by the body as a
-source of trouble. To put it simply, once the vaccine is injected into the body
-it is picked up by normal cells, which start cloning it. Cells are continuously
-copying genes found in the DNA to create proteins that are necessary for their
-activities. This machinery is also exploited by viruses to proliferate, by the
-way.
+**Epitopes** are small pieces of these antigens that are recognized by the body
+as a source of trouble. To put it simply, once the vaccine is injected into the
+body it is picked up by normal cells, which start cloning it. Cells are
+continuously copying genes found in the DNA to create proteins that are
+necessary for their activities. This machinery is also exploited by viruses to
+proliferate, by the way.
 
 ![pathway of antigen processing](/images/spacers/pathway.png){: .center-image}
 
 Some copies of the vaccine are then eaten by this cylindrical machine, called
-proteasome, that cut the vaccine sequence in certain positions. This is also a
-normal activity performed by cells in order to recycle old, malfunctioning
-proteins. Some of the protein pieces produced by the proteasome are loaded onto
-another protein, called MHC, and this complex of epitope-MHC is exposed outside
-of the cell, waiting for a T cell to pass by. T cells are like policemen that
-constantly patrol the body, and inspect the protein pieces shown by the MHC
-through a receptor on their surface. If this receptor binds to the epitope-MHC
-complex, the T cell knows something is wrong, and proceeds to alert the whole
-immune system, as well as to kill the cell showing the epitope.
+**proteasome**, that cut the vaccine sequence in certain positions. This is
+also a normal activity performed by cells in order to recycle old,
+malfunctioning proteins. Some of the protein pieces produced by the proteasome
+are loaded onto another protein, called **MHC**, and this complex of epitope-MHC
+is exposed outside of the cell, waiting for a **T cell** to pass by. T cells are
+like policemen that constantly patrol the body, and inspect the protein pieces
+shown by the MHC through a receptor on their surface. If this receptor binds to
+the epitope-MHC complex, the T cell knows something is wrong, and proceeds to
+alert the whole immune system, as well as to kill the cell showing the epitope.
 
 We want to design vaccines that trigger this sequence of events. Therefore, we
 need to make sure that the epitopes we put in the vaccine can be properly
@@ -136,12 +91,12 @@ follows:
 
 ![vaccine structure](/images/spacers/vaccine.png){: .center-image}
 
-In other words, we alternate epitopes and spacers. Spacers are short, arbitrary
-sequences that we design to trick the proteasome into cutting the vaccine
-between them and the epitopes. If this happens, then the epitope is recovered
-and can (possibly) be picked up by the MHC. If the epitope is not properly
-recovered, e.g. because it is cut in the middle or not separated by its spacers,
-it is very unlikely that the MHC will recognize it.
+In other words, we alternate epitopes and **spacers** Spacers are short,
+arbitrary sequences that we design to trick the proteasome into cutting the
+vaccine between them and the epitopes. If this happens, then the epitope is
+recovered and can (possibly) be picked up by the MHC. If the epitope is not
+properly recovered, e.g. because it is cut in the middle or not separated by its
+spacers, it is very unlikely that the MHC will recognize it.
 
 ## Our contribution
 The current state of the art is fragmented into tools that focus on proper
@@ -152,25 +107,34 @@ results in vaccines that are more effective.
 
 ![graphical abstract](/images/spacers/graphical_abstract.png){: .center-image}
 
+The picture above shows the four steps of our vaccine design framework. First,
+extract epitopes from the antigens of interest. Then, optimize the vaccine
+formulation using the linear program we developed. Finally, evaluate the
+vaccines by simulating the cleavage process.
+
+### Effective immunogenicity
 We used a stochastic model of proteasomal cleavage to estimate the probability
-that each epitope would be recovered, and computed the expected immunogenicity
-of the vaccine taking into account this recovery probability. The cleavage
-probability for each position in the sequence is estimated through a simple
-linear model[^2] that assigns a weight to each of the four preceding and the
-following amino acid. We complement this model by assuming that cleavage must
-happen at least four positions apart, so that we always have enough amino acids
-for the linear model. This is why we need to perform cleavage simulations in the
-first place, as cleavage in one position depends on cleavage not happening in
-the previous positions. Of course we could compute closed-form probabilities,
-but that is too much of a hassle, so we use Monte Carlo simulations to estimate
-them.
+that each epitope would be recovered, and computed the _expected immunogenicity_
+of the vaccine as the average of the immunogenicities of each epitope, weighted
+by its recovery probability. The immunogenicity of an epitope measures,
+informally, how strongly the immune system responds to this epitope. In
+practice, we quantify this through the strength of the bond between this epitope
+and the MHC molecule, which can be predicted fairly accurately and is somewhat
+correlated with binding to T cells.[^1]
 
-The immunogenicity of an epitope measures, informally, how strongly the immune
-system responds to this epitope. In practice, we quantify this through the
-strength of the bond between this epitope and the MHC molecule, which can be
-predicted fairly accurately and is somewhat correlated with binding to T
-cells.[^1]
+The cleavage probability for each position in the sequence is estimated through
+a simple linear model[^2] that assigns a weight to each of the four preceding
+and the following amino acid. This probability is conditioned on the four
+preceding amino acids, which is why we assume that cleavage must happen at least
+four positions apart. You can think of the cleavage process as a fourth-order
+Markov chain, as cleavage in one position depends on cleavage not happening in
+the previous four positions. We could compute analytically the unconditioned
+cleavage probabilities, but most likely the formulas will not be computable in a
+linear program, therefore we only deal with the conditioned probabilities. Once
+a solution is found, we use Monte Carlo simulations to estimate these
+probabilities and compute the effective immunogenicity.
 
+### Linear program
 We solve this vaccine design problem through mixed integer linear programming
 (MILP). A MILP is an optimization problem of this form:
 
@@ -227,6 +191,52 @@ it is trivial to constrain them to be larger or smaller than certain thresholds.
 Furthermore, from the selected epitopes we can find which antigens and types of
 MHC are covered by the vaccine, and from this it is again trivial to enforce
 certain levels of coverage.
+
+## Results
+In the figure below, you see a vaccine designed sequentially with
+state-of-the-art tools on the top, namely OptiTope[^3] for epitope selection and
+OptiVac[^4] for epitope assembly, and, on the bottom, a vaccine designed with
+our framework. The charts show the cleavage probability for each position in the
+vaccine, as estimated by the simulations. The spacer sequences are highlighted
+in bold, and the color of the bar indicates whether cleavage in a certain
+position is good (green) or bad (orange).
+
+![results](/images/spacers/results.png){: .center-image}
+
+As you can see, the vaccine designed with our solution presents larger cleavage
+probabilities between spacers and epitopes (the green bars), and smaller
+cleavage probability inside the epitopes and spacers (orange bars). The
+immunogenicity reported in the title is the sum of the immunogenicities of the
+epitopes. It is much lower for our vaccine, because we had to select epitopes
+that have low cleavage probability in the middle. This is something we cannot
+influence with the spacers, according to our cleavage model, therefore we have a
+limited choice of epitopes that we can use in the vaccine. However, the fact
+that we select epitopes based on their probability of not being cut in the
+middle is one of the strengths our approach, something which is not possible
+with current methods, and, I cannot stress it enough, the main benefit of our
+approach.
+
+The second number reported in the title is the expected number of epitopes
+recovered correctly after proteasomal cleavage. On average, less than one
+epitope is recovered for the sequential design, while our simultaneous approach
+raises this number to more than three. It should be clear now that this increase
+is possible because we selected epitopes that are not as likely to be cut in the
+middle.
+
+The last number is the effective immunogenicity, which is simply the average
+immunogenicity of the epitopes weighted by their recovery probability. Even
+though the individual epitopes selected by our framework are not as immunogenic,
+they have a greater overall effect simply by being recovered more frequently.
+According to this metric, the vaccines designed by our simultaneous approach are
+twice as effective as vaccines designed with the sequential approach.
+
+In the paper we go deeper and analyze these metrics, as well as coverage of
+antigens and patients, varying the "harshness" of the proteasome, i.e. how eager
+it is to cleave proteins. We also study which thresholds are best in which
+situation, and which spacers are frequently produced by our framework. We also
+use a different, more advanced, cleavage prediction tool, to validate our
+results.
+
 
 ## References
 [^1]: Peters, B., Nielsen, M. & Sette, A. _T Cell Epitope Predictions._ Annual Review of Immunology 38, (2020).
