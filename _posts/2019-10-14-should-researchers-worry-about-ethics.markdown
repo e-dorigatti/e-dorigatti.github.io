@@ -10,6 +10,7 @@ easier said than done.
 
 <!-- more -->
 
+## Technology is amoral
 First things first, I think we can all agree on the fact that technology itself
 is _amoral_. Technology is, ultimately, based on mathematics and manipulation of
 numbers (this is what computers do). Formulas and algorithms are neither good or
@@ -29,6 +30,7 @@ assuming that, if an invention can be used to do bad, it will be used that way
 by somebody. Perhaps not today and not tomorrow, but, eventually, one day,
 somebody will find it useful for their evil endeavors.
 
+## What does it mean for researchers to worry about ethics?
 So, with this setting, what does it mean for researchers to worry about ethics?
 At the very least, they should try to conceive and be aware of possible good and
 bad use-cases of their inventions. But then, what to do with this collection of
@@ -63,16 +65,18 @@ exist, I cannot comment on their effectiveness besides noting that there are
 several companies doing evil things in plain sight. This might be caused by the
 fact that it takes time to officially reach a consensus of what counts as bad.
 
-This brings me to a tangentially related topic: should companies be involved in
-politics? My answer is: no. Companies should not take any political stance
-because, while we citizens of democratic countries can choose our government, we
-cannot choose which companies do business with our country and our people. A bad
-government can be overthrown, but the market only listens to money. The right
-solution, in my opinion, would be ethical regulation by the government. To work,
-this requires swift action to keep up with the inventiveness of evil actors, and
-a relatively stable government (a bit like China, a bit unlike Italy). And, of
-course, cultural approval: this works well in Germany, but it would be
-unacceptable in the US, where the "free markets" reign supreme.
+## Should private companies be involved in politics?
+This brings me to a tangentially related topic: should private companies be
+involved in politics? My answer is: no. Companies should not take any political
+stance because, while we citizens of democratic countries can choose our
+government, we cannot choose which companies do business with our country and
+our people. A bad government can be overthrown, but the market only listens to
+money. The right solution, in my opinion, would be ethical regulation by the
+government. To work, this requires swift action to keep up with the
+inventiveness of evil actors, and a relatively stable government (a bit like
+China, a bit unlike Italy). And, of course, cultural approval: this works well
+in Germany, but it would be unacceptable in the US, where the "free markets"
+reign supreme.
 
 In practice, however, it is inevitable that business intersects with politics,
 especially when it is the government that is putting pressure on companies (see
@@ -95,6 +99,7 @@ between the US and China, as well as the past cold war between the US and the
 USSR, clearly show that people do have very different, and sometimes
 incompatible, values, and that this is unacceptable to some of these people.
 
+## What can I, as a researcher, do about it?
 This looks like a messy knot that nobody can untangle alone. What can I, as a
 researcher, do about it? I like to think that my research is positive: I study
 how the body fights diseases, and how we can design better drugs to treat them.
