@@ -250,13 +250,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport (>= 6.0.3.1)
+  activesupport
   github-pages
-  jekyll (~> 3.8.5)
-  jekyll-feed (~> 0.6)
-  jekyll-org (>= 1.0.2)
+  jekyll
+  jekyll-feed
+  jekyll-org
   jekyll-seo-tag
-  minima (~> 2.0)
+  minima
   tzinfo-data
 
 BUNDLED WITH
