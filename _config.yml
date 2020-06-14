@@ -21,8 +21,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   My Ph.D. and other tech stuff
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
+twitter_username: edorigatti
 github_username:  e-dorigatti
+
+header_pages:
+ - cv.md
+ - about.md
 
 # Build settings
 markdown: kramdown
@@ -30,6 +34,8 @@ highlighter: rouge
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
 show_excerpts: true
 excerpt_separator: <!-- more -->
 
