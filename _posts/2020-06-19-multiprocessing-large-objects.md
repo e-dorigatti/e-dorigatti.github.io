@@ -34,11 +34,11 @@ df = pd.DataFrame(
     index=[f'Idx-{i}' for i in range(rows)]
 )
 
-print(f'Data size: {df.values.nbytes / 1024 / 204:.1f} MB')
+print(f'Data size: {df.values.nbytes / 1024 / 1204:.1f} MB')
 df.iloc[:5, :5]
 ```
 
-    Data size: 191.5 MB
+    Data size: 32.4 MB
 
 
 
@@ -72,43 +72,43 @@ df.iloc[:5, :5]
   <tbody>
     <tr>
       <th>Idx-0</th>
-      <td>0.851202</td>
-      <td>0.541714</td>
-      <td>0.723445</td>
-      <td>0.735777</td>
-      <td>0.283071</td>
+      <td>0.759636</td>
+      <td>0.475505</td>
+      <td>0.625045</td>
+      <td>0.806929</td>
+      <td>0.447964</td>
     </tr>
     <tr>
       <th>Idx-1</th>
-      <td>0.140121</td>
-      <td>0.488509</td>
-      <td>0.446370</td>
-      <td>0.904190</td>
-      <td>0.596619</td>
+      <td>0.085767</td>
+      <td>0.038912</td>
+      <td>0.726519</td>
+      <td>0.771332</td>
+      <td>0.287777</td>
     </tr>
     <tr>
       <th>Idx-2</th>
-      <td>0.118482</td>
-      <td>0.022094</td>
-      <td>0.637346</td>
-      <td>0.675539</td>
-      <td>0.496147</td>
+      <td>0.781693</td>
+      <td>0.589335</td>
+      <td>0.485391</td>
+      <td>0.090572</td>
+      <td>0.559625</td>
     </tr>
     <tr>
       <th>Idx-3</th>
-      <td>0.543767</td>
-      <td>0.809873</td>
-      <td>0.575806</td>
-      <td>0.696533</td>
-      <td>0.432091</td>
+      <td>0.309681</td>
+      <td>0.307883</td>
+      <td>0.656973</td>
+      <td>0.104621</td>
+      <td>0.171662</td>
     </tr>
     <tr>
       <th>Idx-4</th>
-      <td>0.242222</td>
-      <td>0.244618</td>
-      <td>0.947254</td>
-      <td>0.871568</td>
-      <td>0.436967</td>
+      <td>0.477405</td>
+      <td>0.211749</td>
+      <td>0.692536</td>
+      <td>0.574679</td>
+      <td>0.379362</td>
     </tr>
   </tbody>
 </table>
