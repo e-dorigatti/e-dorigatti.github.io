@@ -63,6 +63,9 @@ all of this with a grain of salt. I certainly cannot make any kind of educated
 guess on which vaccine has the best chance to succeed.
 
 ## mRNA-1273
+**Follow-up:** The authors have relased a pre-print on bioRxiv[^19] giving more
+details on the vaccine and its evaluation in phase I and II clinical trials.
+
 Developed by [Moderna](https://www.modernatx.com/) and tested in clinical trial
 [NCT04283461](https://clinicaltrials.gov/ct2/show/NCT04283461), mRNA-1273 is a
 novel lipid nanoparticle (LNP)-encapsulated mRNA-based vaccine that encodes for
@@ -312,3 +315,4 @@ explaining the same biological processes involved.
 [^16]: [Graph-Theoretical Formulation of the Generalized Epitope-based Vaccine Design Problem]({% post_url 2019-11-18-the_first_project_of_my_phd %})
 [^17]: [Joint epitope selection and spacer design for string-of-beads vaccines]({% post_url 2020-04-27-jessev %})
 [^18]: [Callaway, E. Scores of coronavirus vaccines are in competition — how will scientists choose the best? Nature (2020)](https://www.nature.com/articles/d41586-020-01247-2)
+[^19]: Corbett, K. S. et al. SARS-CoV-2 mRNA Vaccine Development Enabled by Prototype Pathogen Preparedness. [http://biorxiv.org/lookup/doi/10.1101/2020.06.11.145920](http://biorxiv.org/lookup/doi/10.1101/2020.06.11.145920 ) (2020) doi:10.1101/2020.06.11.145920.
