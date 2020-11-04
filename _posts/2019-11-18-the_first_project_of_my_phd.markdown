@@ -20,12 +20,15 @@ technical audience. <!-- more --> I start, however, by quoting the abstract:
 > explore new regions of the vaccine design space, analyze the trade-offs
 > between the design phases, and balance the many requirements of vaccines.
 
-
 Depending on how much you understood of this, you might prefer to [jump directly
-to the paper](https://www.biorxiv.org/content/10.1101/845503v1), or to keep
-reading this blog post and, perhaps, read the paper later. Code and data are
-available in [this GitHub
-repository](https://github.com/SchubertLab/GeneralizedEvDesign).
+to the paper][plos], or to keep reading this blog post and, perhaps, read the paper
+later. Code and data are available in [this GitHub repository][github].
+
+**Update:** this article was finally published in PLOS Computational Biology!
+
+Dorigatti E, Schubert B (2020) _Graph-theoretical formulation of the generalized
+epitope-based vaccine design problem._ PLoS Comput Biol 16(10): e1008237.
+[https://doi.org/10.1371/journal.pcbi.1008237][doi]
 
 ## Introduction: the biology of epitope vaccines
 Proteins are the building blocks of our bodies: in order to function correctly,
@@ -287,22 +290,27 @@ of these things, we even lack qualitative understanding, or are, simply,
 clueless.
 
 ## References
-[^maupin-furlow_proteasomes_2012]: Maupin-Furlow J. _Proteasomes and protein conjugation across domains of life._ Nat Rev Microbiol. 2012 Feb;10(2):100–11. 
-[^blum_pathways_2013]: Blum JS, Wearsch PA, Cresswell P. _Pathways of antigen processing._ Annu Rev Immunol. 2013;31:443–73. 
-[^kong_expanded_2009]:  Kong W-P, Wu L, Wallstrom TC, Fischer W, Yang Z-Y, Ko S-Y, et al. _Expanded Breadth of the T-Cell Response to Mosaic Human Immunodeficiency Virus Type 1 Envelope DNA Vaccination._ Journal of Virology. 2009 Mar 1;83(5):2201–15. 
-[^santra_breadth_2012]: Santra S, Muldoon M, Watson S, Buzby A, Balachandran H, Carlson KR, et al. _Breadth of cellular and humoral immune responses elicited in rhesus monkeys by multi-valent mosaic and consensus immunogens._ Virology. 2012 Jul;428(2):121–7. 
-[^barouch_evaluation_2018]: Barouch DH, Tomaka FL, Wegmann F, Stieh DJ, Alter G, Robb ML, et al. _Evaluation of a Mosaic HIV-1 Vaccine in a Randomized, Double-Blinded, Placebo-Controlled Phase I/IIa Clinical Trial and in Rhesus Monkeys._ Lancet. 2018 Jul 21;392(10143):232–43. 
+[^maupin-furlow_proteasomes_2012]: Maupin-Furlow J. _Proteasomes and protein conjugation across domains of life._ Nat Rev Microbiol. 2012 Feb;10(2):100–11.
+[^blum_pathways_2013]: Blum JS, Wearsch PA, Cresswell P. _Pathways of antigen processing._ Annu Rev Immunol. 2013;31:443–73.
+[^kong_expanded_2009]:  Kong W-P, Wu L, Wallstrom TC, Fischer W, Yang Z-Y, Ko S-Y, et al. _Expanded Breadth of the T-Cell Response to Mosaic Human Immunodeficiency Virus Type 1 Envelope DNA Vaccination._ Journal of Virology. 2009 Mar 1;83(5):2201–15.
+[^santra_breadth_2012]: Santra S, Muldoon M, Watson S, Buzby A, Balachandran H, Carlson KR, et al. _Breadth of cellular and humoral immune responses elicited in rhesus monkeys by multi-valent mosaic and consensus immunogens._ Virology. 2012 Jul;428(2):121–7.
+[^barouch_evaluation_2018]: Barouch DH, Tomaka FL, Wegmann F, Stieh DJ, Alter G, Robb ML, et al. _Evaluation of a Mosaic HIV-1 Vaccine in a Randomized, Double-Blinded, Placebo-Controlled Phase I/IIa Clinical Trial and in Rhesus Monkeys._ Lancet. 2018 Jul 21;392(10143):232–43.
 [^vansteenwegen_orienteering_2011]: Vansteenwegen P, Souffriau W, Oudheusden DV. _The orienteering problem: A survey._ European Journal of Operational Research. 2011 Feb;209(1):1–10.
-[^toussaint_universal_2011]: Toussaint NC, Maman Y, Kohlbacher O, Louzoun Y. _Universal peptide vaccines – Optimal peptide vaccine design based on viral sequence conservation._ Vaccine. 2011 Nov;29(47):8745–53. 
-[^fischer_polyvalent_2007]: Fischer W, Perkins S, Theiler J, Bhattacharya T, Yusim K, Funkhouser R, et al. _Polyvalent vaccines for optimal coverage of potential T-cell epitopes in global HIV-1 variants._ Nature Medicine. 2007 Jan;13(1):100–6. 
+[^toussaint_universal_2011]: Toussaint NC, Maman Y, Kohlbacher O, Louzoun Y. _Universal peptide vaccines – Optimal peptide vaccine design based on viral sequence conservation._ Vaccine. 2011 Nov;29(47):8745–53.
+[^fischer_polyvalent_2007]: Fischer W, Perkins S, Theiler J, Bhattacharya T, Yusim K, Funkhouser R, et al. _Polyvalent vaccines for optimal coverage of potential T-cell epitopes in global HIV-1 variants._ Nature Medicine. 2007 Jan;13(1):100–6.
 [^schubert_designing_2016]: Schubert B, Kohlbacher O. _Designing string-of-beads vaccines with optimal spacers._ Genome Medicine 2016 Dec;8(1).
 [^lundegaard_popcover_2010]: Lundegaard C, Buggert M, Karlsson A, Lund O, Perez C, Nielsen M. _PopCover: a method for selecting of peptides with optimal population and pathogen coverage._ In: Proceedings of the First ACM International Conference on Bioinformatics and Computational Biology - BCB ’10. Niagara Falls, New York: ACM Press; 2010 p. 658.
-[^pardi_mrna_2018]: Pardi N, Hogan MJ, Porter FW, Weissman D. _mRNA vaccines — a new era in vaccinology._ nrd. 2018 Apr;17(4):261–79. 
-[^hu_towards_2017]: Hu Z, Ott PA, Wu CJ. _Towards personalized, tumour-specific, therapeutic vaccines for cancer._ Nature Reviews Immunology. 2017 Dec 11;18(3):168–82. 
-[^melief_immunotherapy_2008]: Melief CJM, Burg SH van der. _Immunotherapy of established (pre)malignant disease by synthetic long peptide vaccines._ Nat Rev Cancer. 2008 May;8(5):351–60. 
-[^sahin_personalized_2018]: Sahin U, Türeci Ö. _Personalized vaccines for cancer immunotherapy._ Science. 2018 Mar 23;359(6382):1355–60. 
-[^mellman_cancer_2011]: Mellman I, Coukos G, Dranoff G. _Cancer immunotherapy comes of age._ Nature. 2011 Dec 21;480(7378):480–9. 
-[^alsaab_pd-1_2017]: Alsaab HO, Sau S, Alzhrani R, Tatiparti K, Bhise K, Kashaw SK, et al. _PD-1 and PD-L1 Checkpoint Signaling Inhibition for Cancer Immunotherapy: Mechanism, Combinations, and Clinical Outcome._ Front Pharmacol. 2017;8:561. 
-[^finn_dawn_2017]: Finn OJ. _The dawn of vaccines for cancer prevention._ Nature Reviews Immunology. 2017 Dec 27;18(3):183–94. 
-[^olugbile_malaria_2010]: Olugbile S, Habel C, Servis C, Spertini F, Verdini A, Corradin G. _Malaria vaccines - The long synthetic peptide approach: Technical and conceptual advancements._ Curr Opin Mol Ther. 2010 Feb;12(1):64–76. 
-[^zwaveling_established_2002]: Zwaveling S, Ferreira Mota SC, Nouta J, Johnson M, Lipford GB, Offringa R, et al. _Established Human Papillomavirus Type 16-Expressing Tumors Are Effectively Eradicated Following Vaccination with Long Peptides._ The Journal of Immunology. 2002;169(1):350--358. 
+[^pardi_mrna_2018]: Pardi N, Hogan MJ, Porter FW, Weissman D. _mRNA vaccines — a new era in vaccinology._ nrd. 2018 Apr;17(4):261–79.
+[^hu_towards_2017]: Hu Z, Ott PA, Wu CJ. _Towards personalized, tumour-specific, therapeutic vaccines for cancer._ Nature Reviews Immunology. 2017 Dec 11;18(3):168–82.
+[^melief_immunotherapy_2008]: Melief CJM, Burg SH van der. _Immunotherapy of established (pre)malignant disease by synthetic long peptide vaccines._ Nat Rev Cancer. 2008 May;8(5):351–60.
+[^sahin_personalized_2018]: Sahin U, Türeci Ö. _Personalized vaccines for cancer immunotherapy._ Science. 2018 Mar 23;359(6382):1355–60.
+[^mellman_cancer_2011]: Mellman I, Coukos G, Dranoff G. _Cancer immunotherapy comes of age._ Nature. 2011 Dec 21;480(7378):480–9.
+[^alsaab_pd-1_2017]: Alsaab HO, Sau S, Alzhrani R, Tatiparti K, Bhise K, Kashaw SK, et al. _PD-1 and PD-L1 Checkpoint Signaling Inhibition for Cancer Immunotherapy: Mechanism, Combinations, and Clinical Outcome._ Front Pharmacol. 2017;8:561.
+[^finn_dawn_2017]: Finn OJ. _The dawn of vaccines for cancer prevention._ Nature Reviews Immunology. 2017 Dec 27;18(3):183–94.
+[^olugbile_malaria_2010]: Olugbile S, Habel C, Servis C, Spertini F, Verdini A, Corradin G. _Malaria vaccines - The long synthetic peptide approach: Technical and conceptual advancements._ Curr Opin Mol Ther. 2010 Feb;12(1):64–76.
+[^zwaveling_established_2002]: Zwaveling S, Ferreira Mota SC, Nouta J, Johnson M, Lipford GB, Offringa R, et al. _Established Human Papillomavirus Type 16-Expressing Tumors Are Effectively Eradicated Following Vaccination with Long Peptides._ The Journal of Immunology. 2002;169(1):350--358.
+
+
+[plos]: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008237
+[github]: https://github.com/SchubertLab/GeneralizedEvDesign
+[doi]: https://doi.org/10.1371/journal.pcbi.1008237
