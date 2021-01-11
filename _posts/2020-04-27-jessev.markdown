@@ -47,6 +47,12 @@ effective vaccines.
 You can find the paper on [biorxiv](https://www.biorxiv.org/content/10.1101/2020.04.25.060988v1), and the software implementation on
 [GitHub](https://github.com/SchubertLab/JessEV).
 
+**Update:** this article was finally published in [Oxford Bioinformatics][oxf]!
+
+> Emilio Dorigatti, Benjamin Schubert, _Joint epitope selection and spacer design
+> for string-of-beads vaccines_, Bioinformatics, Volume 36, Issue Supplement_2,
+> December 2020, Pages i643–i650, [https://doi.org/10.1093/bioinformatics/btaa790][doi]
+
 ## Background
 Designing a vaccine requires at least three steps: discovering all the epitopes
 from the target antigens, choosing which ones to put in the vaccine, and
@@ -244,3 +250,6 @@ results.
 [^3]: Toussaint, N. C., Dönnes, P. & Kohlbacher, O. _A Mathematical Framework for the Selection of an Optimal Set of Peptides for Epitope-Based Vaccines._ PLoS Computational Biology 4, e1000246 (2008).
 [^4]: Schubert, B. & Kohlbacher, O. _Designing string-of-beads vaccines with optimal spacers._ Genome Medicine 8, (2016).
 
+
+[oxf]: https://academic.oup.com/bioinformatics/article/36/Supplement_2/i643/6055919
+[doi]: https://doi.org/10.1093/bioinformatics/btaa790
