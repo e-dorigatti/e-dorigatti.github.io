@@ -12,7 +12,7 @@ store temporary results. Or is it?
 
 Consider a somewhat silly example:
 
-```{python}
+```python
 [
     2 * x
     for x in range(10)
@@ -29,7 +29,7 @@ Turns out it's possible with a simple trick: put the transformed item into a
 list and use a nested comprehension:
 
 
-```{python}
+```python
 [
     y
     for x in range(10)
@@ -43,7 +43,7 @@ This trick is straightforward to apply to multiple transformations and
 conditions, so that each step has access to the variables defined (and filtered)
 earlier:
 
-```{python}
+```python
 [
     process(each, tmp1, tmp2, tmp3)
     for each in lst
