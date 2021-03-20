@@ -2,7 +2,7 @@
 layout: post
 title:  "What is my PhD about?"
 date:   2019-08-16 11:41:22 +0200
-categories: jekyll update
+categories: PhD Vaccines
 ---
 
 So I have started my PhD last month, after a not-so-good experience in the

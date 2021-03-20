@@ -2,6 +2,7 @@
 layout: post
 title:  "The expectation maximization algorithm without the agonizing pain"
 date:   2021-03-15 12:00:00 +0200
+categories: Math
 ---
 
 My first introduction to the expectation maximization (EM) algorithm was a bit

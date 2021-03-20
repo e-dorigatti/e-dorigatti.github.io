@@ -4,6 +4,10 @@ layout: post
 date: 2020-05-26 09:00:00 +0200
 markdown: kramdown
 highlighter: rouge
+categories:
+ - Riddles
+ - Linear Programming
+ - Python
 ---
 
 A few ~~days~~ months ago (took me a while to wrap this up) I stumbled upon this

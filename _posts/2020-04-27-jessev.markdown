@@ -4,6 +4,10 @@ layour: post
 date: 2020-04-27 09:00:00 +0200
 markdown: kramdown
 highlighter: rouge
+categories:
+ - PhD
+ - Research
+ - Linear Programming
 ---
 
 We have just submitted a paper describing a new framework for vaccine design.

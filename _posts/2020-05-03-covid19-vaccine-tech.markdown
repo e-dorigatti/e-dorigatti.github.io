@@ -2,6 +2,7 @@
 layout: post
 title:  "Technology of vaccines for COVID-19"
 date: 2020-05-03 09:00:00 +0200
+categories: Vaccines
 ---
 
 Currently, several vaccines for COVID-19 are undergoing clinical trials. They are

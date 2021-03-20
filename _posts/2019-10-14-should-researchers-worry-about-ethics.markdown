@@ -2,6 +2,7 @@
 date: 2019-10-14 12:00:00 +0200
 title: "(How) should researchers worry about ethics?"
 layout: post
+categories: Research
 ---
 
 A few days ago I saw a tweet mentioning that NLP researchers should seriously

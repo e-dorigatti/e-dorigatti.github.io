@@ -3,6 +3,7 @@ title: "One year of PhD: a retrospective"
 layout: post
 date: 2020-07-24 12:00:00 +0200
 markdown: kramdown
+categories: PhD
 ---
 <style type="text/css">
 tbody:nth-child(odd) > tr > td { background: #ffffff;  border: none; }
@@ -40,7 +41,7 @@ for Emacs and Org mode, such as the agenda, Magit and layouts. I am quite happy
 of my current setup, I feel much more productive now. Keyboard-based user
 interfaces are way faster to use as everything I need is only a few keystrokes
 away, which means less interruptions and more focus.
-   
+
 ## Bad things
 
 The pressure to always do more. This is not a consequence of the environment or

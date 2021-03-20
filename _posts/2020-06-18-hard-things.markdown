@@ -2,6 +2,8 @@
 layout: post
 title:  "... but humans can learn with vErY fEw ExAmPlEs !!11!!!1!"
 date: 2020-06-18 09:00:00 +0200
+categories:
+ - Deep Learning
 ---
 
 Next time you hear somebody saying that artificial intelligence is flawed

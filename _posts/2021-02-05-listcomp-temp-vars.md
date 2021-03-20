@@ -2,6 +2,7 @@
 layout: post
 title:  "Temporary variables in Python's list comprehension"
 date: 2021-02-05 09:00:00 +0200
+categories: Python
 ---
 
 Although list comprehensions are very handy, it is difficult to write

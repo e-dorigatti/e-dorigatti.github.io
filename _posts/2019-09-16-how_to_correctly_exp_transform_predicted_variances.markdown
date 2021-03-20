@@ -2,6 +2,7 @@
 date: 2019-09-16 12:00:00 +0200
 title: "How to predict aleatoric uncertainty for log-transformed data"
 layout: post
+categories: Math
 ---
 
 Suppose you want to train a neural network (or any other model) on a regression
@@ -27,10 +28,10 @@ to $g(\hat x)^2$ to zero:
 $$
 \begin{align}
 \frac{\partial}{\partial g(\hat x)^2} \ln p(\hat y | \hat x) = 0
-& \Longleftrightarrow 
+& \Longleftrightarrow
 -\frac{\left(\hat y-f(\hat x)\right)^2}{2}
 \cdot -\frac{2}{g(\hat x)^4}-\frac{2}{2 g(\hat x)^2} = 0 \\
-& \Longleftrightarrow 
+& \Longleftrightarrow
 \frac{\left(\hat y-f(\hat x)\right)^2}{g(\hat x)^2}=1 \\
 & \Longleftrightarrow  g(\hat x)^2=\left(\hat y - f(\hat x)\right)^2
 \end{align}

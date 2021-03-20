@@ -3,6 +3,9 @@ title: "Speedrunning the NeurIPS Bayesian Deep Learning Poster Session"
 layour: post
 date: 2020-12-11 09:00:00 +0200
 markdown: kramdown
+categories:
+ - Research
+ - Deep Learning
 ---
 
 Thanks to the virtual platform [Gather.town][gt], I could swiftly zip from

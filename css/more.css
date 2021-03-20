@@ -27,3 +27,24 @@ main {
     margin: auto;
     display: block;
 }
+
+.category {
+    padding: 5px;
+}
+
+.home-categories {
+    margin-bottom: 30px;
+}
+
+.category {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #bbbbbb;
+    border-radius: 10px;
+    background-color: #eeeeee;
+}
+
+.category > a {
+    color: #666666;
+    text-decoration: none;
+}

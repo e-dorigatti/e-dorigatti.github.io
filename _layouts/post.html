@@ -12,7 +12,16 @@ layout: default
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      {%- endif -%}
+      {% for category in page.categories %}
+      <button class="category">
+          <a
+              href="{{ site.baseurl }}/categories#{{ category | slugize }}">
+              {{ category }}
+          </a>
+      </button>
+      {% endfor %}
+      </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">

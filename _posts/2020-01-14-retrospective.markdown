@@ -3,6 +3,7 @@ title: "Six months of PhD: a retrospective"
 layout: post
 date: 2020-01-14 12:00:00 +0200
 markdown: kramdown
+categories: PhD
 ---
 <style type="text/css">
 tbody:nth-child(odd) > tr > td { background: #ffffff;  border: none; }
@@ -141,7 +142,7 @@ on useless work. I do not consider myself good in dealing with stressful, high
 pressure situations, possibly because I lack the quick intuition, coming from
 experience, of what is the right thing to do. However, I am not too worried
 about my lack of collaborations. After all, this is a completely new
-environment for me, and I did not know anybody when I started. 
+environment for me, and I did not know anybody when I started.
 
 ## Research diary
 I try to keep a research diary, logging what I do every day, how I spend my
@@ -211,7 +212,7 @@ Overall I am very satisfied about this diary, and I think my life would be
 considerably messier without it. Being text-based, unexpectedly, turns out to be
 a huge advantage: I can sort and re-order things however I please (I needed
 several iterations before finding a comfortable way of organizing things), and I
-am not limited by an arbitrary maximum depth for my items. Like many other 
+am not limited by an arbitrary maximum depth for my items. Like many other
 things, it has a steeper learning curve compared to the mainstream dumbed-down
 solutions, but the benefits are well worth it.
 

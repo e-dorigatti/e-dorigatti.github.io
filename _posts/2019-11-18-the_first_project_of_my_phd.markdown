@@ -2,6 +2,10 @@
 title: "The first project of my PhD"
 layour: post
 date: 2019-11-18 12:00:00 +0200
+categories:
+ - PhD
+ - Research
+ - Linear Programming
 ---
 
 I am in the process of publishing the first paper I wrote in my PhD, and, as

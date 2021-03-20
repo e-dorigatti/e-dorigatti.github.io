@@ -4,6 +4,9 @@ layout: post
 date: 2020-02-15 09:00:00 +0200
 markdown: kramdown
 highlighter: rouge
+categories:
+ - Math
+ - Deep Learning
 ---
 
 A few decades ago, researchers were trying to understand which kind of shapes

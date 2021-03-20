@@ -3,6 +3,7 @@ title: "How I almost lost one year worth of notes!"
 layout: post
 date: 2020-08-27 12:00:00 +0200
 markdown: kramdown
+categories: PhD
 ---
 
 <style type="text/css">
@@ -30,7 +31,7 @@ mode to keep my notes in a huge org-mode file, which is not too different from
 markdown. Emacs can collapse sections into a single line showing only the
 header, and using `J` on the collapsed header removes all newlines in the whole
 section! I must have unintentionally done it on a top-level header, and in a
-hurry I must have saved and quit emacs without realizing the damage. 
+hurry I must have saved and quit emacs without realizing the damage.
 
 I found about this nice surprise only on the next day. I honestly did not know
 this command even existed, so you can imagine my confusion when I saw everything
@@ -221,7 +222,7 @@ def reconstruct(r, s, d):
         an = d.get((i + 1, j), float('inf'))
         am = d.get((i, j + 1), float('inf'))
         ao = d.get((i + 1, j + 1), float('inf'))
-        
+
         if ao <= am and ao <= an:
             # either same character or replacement, take from new string
             res.append(r[i])
@@ -321,13 +322,13 @@ def reconstruct(r, s, d):
         an = d.get((i + 1, j), float('inf'))
         am = d.get((i, j + 1), float('inf'))
         ao = d.get((i + 1, j + 1), float('inf'))
-        
+
         if s[j] == '\n':
             # *** NEW CASE ***
             # force insertion of newlines from backup
             res.append(s[j])
             j += 1
-            
+
             # skip a possible corresponding newline in the mingdled notes
             if r[i] == '\n':
                 i += 1

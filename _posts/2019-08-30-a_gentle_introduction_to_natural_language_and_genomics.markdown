@@ -2,7 +2,7 @@
 layout: post
 title:  "A gentle introduction to natural language and genomics"
 date:   2019-09-02 12:00:00 +0200
-categories: jekyll update
+categories:
 ---
 
 
@@ -19,7 +19,7 @@ regression), which is analogous to sentence classification in NLP. That field
 was turned upside down in the last years due to the introduction of Deep
 Learning, and, in particular, of distributed word representations; going from
 words/sentences/documents to amino acids/proteins/genes is not such a big leap,
-conceptually. 
+conceptually.
 
 Since I want this blog to be useful to non-technical people as well, I will
 devote this article to a brief, high-level and to-the-point overview of what is

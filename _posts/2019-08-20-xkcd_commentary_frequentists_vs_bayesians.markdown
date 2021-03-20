@@ -2,7 +2,7 @@
 layout: post
 title:  "xkcd commentary - Frequentists vs. Bayesians"
 date:   2019-08-20 11:41:22 +0200
-categories: jekyll update
+categories: Math
 ---
 
 I found [this xkcd comic](https://xkcd.com/1132/) hilarious and, at the same
