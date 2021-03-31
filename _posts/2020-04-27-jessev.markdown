@@ -1,6 +1,6 @@
 ---
 title: "Joint epitope selection and spacer design for string-of-beads vaccines"
-layour: post
+layout: post
 date: 2020-04-27 09:00:00 +0200
 markdown: kramdown
 highlighter: rouge
