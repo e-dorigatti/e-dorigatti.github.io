@@ -25,8 +25,8 @@ as a software developer, web developer, data engineer, data scientist, and
 consulting.
     </p>
   </div>
-  
-  <div class="home-categories">
+
+  <div class="bot-margin">
       <h2> I write about </h2>
       {% for category in site.categories %}
       {% capture category_name %}{{ category | first }}{% endcapture %}
@@ -39,13 +39,24 @@ consulting.
       {% endfor %}
   </div>
 
+  <div class="bot-margin">
+    <h2>Recent News</h2>
+    <div class="news-list">
+        {% for n in site.data.news limit:3 %}
+        <div class="news-item">
+        <p class="news-text"> {{ n.text }} </p>
+        <p class="news-date"> {{ n.date | date: site.date_format }} </p>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+
   <div class="latest">
     <h2 class="post-list-heading">All posts</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
         <li>
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <span class="post-meta">{{ post.date | date: site.date_format }}</span>
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}

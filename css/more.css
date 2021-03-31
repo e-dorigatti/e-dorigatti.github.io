@@ -32,7 +32,7 @@ main {
     padding: 5px;
 }
 
-.home-categories {
+.bot-margin {
     margin-bottom: 30px;
 }
 
@@ -47,4 +47,30 @@ main {
 .category > a {
     color: #666666;
     text-decoration: none;
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-item {
+    margin: 10px;
+    padding: 30px;
+    background-color: #eeeeee;
+    border-radius: 30px;
+    width: 180px;
+}
+
+.news-text {
+    text-align: center;
+    height: 100%;
+    margin: 0px;
+}
+
+.news-date {
+    margin: 0px;
+    color: gray;
+    text-align: right;
 }

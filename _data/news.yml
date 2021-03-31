@@ -1,0 +1,4 @@
+- date: 2021-03-31
+  text: Today I lost hours debugging why some code wasn't shuffling the values in a subset of the columns of a pandas dataframe, just to realize that those columns all contained the same value.
+- date: 2021-03-31
+  text: I added this news section! Jekyll's <a href="https://jekyllrb.com/docs/step-by-step/06-data-files/">data files</a> are a great fit for this use case. I also learned about the CSS flexbox module to get divs side-by-side. It's a great improvement compared to the mess it used to be.
