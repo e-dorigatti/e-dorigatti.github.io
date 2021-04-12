@@ -1,3 +1,7 @@
+- date: 2021-04-12
+  text: Why does Pandas need to use .unique() on a Series and .drop_duplicates() on a DataFrame? Just pick one already!
+- date: 2021-04-08
+  text: I got a machine learning algorithm to work much better simply by changing < to <=
 - date: 2021-03-31
   text: Today I lost hours debugging why some code wasn't shuffling the values in a subset of the columns of a pandas dataframe, just to realize that those columns all contained the same value.
 - date: 2021-03-31
