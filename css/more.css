@@ -63,10 +63,15 @@ main {
     width: 180px;
 }
 
-.news-text {
-    text-align: center;
+.news-text-container {
     height: 100%;
-    margin: 0px;
+    display: flex;
+}
+
+.news-text {
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .news-date {

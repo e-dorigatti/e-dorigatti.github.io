@@ -44,11 +44,14 @@ consulting.
     <div class="news-list">
         {% for n in site.data.news limit:3 %}
         <div class="news-item">
-        <p class="news-text"> {{ n.text }} </p>
-        <p class="news-date"> {{ n.date | date: site.date_format }} </p>
+            <div class="news-text-container">
+            <p class="news-text"> {{ n.text }} </p>
+            </div>
+            <p class="news-date"> {{ n.date | date: site.date_format }} </p>
         </div>
         {% endfor %}
     </div>
+    <p style="text-align:right"><a href="/news/">See all</a></p>
   </div>
 
   <div class="latest">
