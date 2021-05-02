@@ -1,3 +1,5 @@
+- date: 2021-05-02
+  text: I feel like creating all this "intelligent" technology will just remove intelligence from people.
 - date: 2021-04-20
   text: Why is it that if you do not call .reset_index(drop=True) every two lines things breaks at random?
 - date: 2021-04-14
