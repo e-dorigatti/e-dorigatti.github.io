@@ -2,7 +2,7 @@
 date: 2021-06-14 12:00:00 +0200
 title: "Orange Slices"
 layout: post
-categories: Riddles
+categories: Riddles Math
 ---
 
 I found an interesting geometrical riddle on Twitter that I could not ignore.
