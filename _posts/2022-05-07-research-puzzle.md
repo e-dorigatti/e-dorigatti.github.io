@@ -7,6 +7,20 @@ categories:
  - Research
 ---
 
+<style>
+.pzl-box {
+    box-sizing: border-box;
+    margin: 10% 0px 10% 0px;
+}
+
+.pzl-img {
+    max-width: 80%;
+    margin: auto;
+    display: block;
+}
+</style>
+
+
 I was gifted a puzzle for my birthday and while assembling it I noticed some
 similarities with the work of a researcher. Hear me out.
 
@@ -18,7 +32,7 @@ of "jack of ~~all~~ some trades, master of none" kind of researcher, and how
 this is not really appreciated in the AI research environment (Rosanne Liu also
 touched on this topic in [a talk of hers][l]).
 
-[r]: {% post_url 2022-03-03-phd-meta %} 
+[r]: {% post_url 2022-03-03-phd-meta %}
 [l]: https://www.youtube.com/watch?v=0blQp0_9NwY
 
 The essential problem that I noticed is that it really takes a long time and
@@ -50,6 +64,11 @@ because you examined that particular area so many times already. Sometimes a
 piece gets lost, perhaps under the sofa, or perhaps it never was in the box in
 the first place. Although you know exactly what is supposed to be there, the
 puzzle will forever remain with an open gap.
+
+<div class="pzl-box">
+  <img src="/images/puzzle.jpg" class="pzl-img"
+    alt="Image of a puzzle with a missing piece" />
+</div>
 
 How does this resemble research? Think of pieces as research papers. Initially
 you are drowned by thousands of articles. You slowly start reading them and
