@@ -313,6 +313,10 @@ config conf2 dataset cifar10 repetition 1
 config conf2 dataset cifar10 repetition 2
 ```
 
+As an exercise, try to modify this Snakefile to perform a common pretraining
+step at the beginning. Maybe even consider different pretraining and finetuning
+methods!
+
 ## Conclusion
 Thanks to its matching capabilities, it is possible to use Snakemake to create
 rather complicated experimental workflows succinctly. It took a while for me to
