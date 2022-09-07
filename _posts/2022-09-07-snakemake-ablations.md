@@ -250,6 +250,69 @@ As an exercise, try to think how to expand this Snakefile to first perform some
 sort of pretraining on a common dataset, and then run those ten repetitions as a
 finetuning step.
 
+## Lab session
+
+To put in practice what you learned so far, here's a Snakefile with the basic
+structure of example I just discussed above. It uses stub bash commands instead
+of actual training and analysis so that you can see the flow of data.
+
+```
+rule all:
+    input:
+        expand("outputs/{config}-{dataset}.out",
+               config=os.listdir("configs"),
+               dataset=["cifar10", "mnist"])
+
+rule aggregate_results:
+    output:
+        "outputs/{config}-{dataset}.out"
+    input:
+        lambda wildcards: expand("logs/{c}-{d}-rep{i}.log",
+                                 c=wildcards.config,
+                                 d=wildcards.dataset,
+                                 i=range(3))
+    shell: """
+        set -x
+        sleep 1
+        cat {input} > {output}
+    """
+
+
+rule run_experiment:
+    output:
+        "logs/{config}-{dataset}-rep{i}.log"
+    shell: """
+        set -x
+        sleep 1
+        echo config {wildcards.config} \
+            dataset {wildcards.dataset} \
+            repetition {wildcards.i} \
+            > {output}
+    """
+```
+
+Put this in a `Snakefile`, create some fake configurations and output folders,
+and run Snakemake in parallel:
+
+```
+> mkdir configs logs outputs
+> touch configs/conf1 configs/conf2
+> snakemake -c 20
+```
+
+Note that, despite the sleep commands in there, it will finish pretty quickly as
+20 rules are executed in parallel. At the end, the output folder will contain
+all files we expect:
+
+```
+> ls outputs
+conf1-cifar10.out  conf1-mnist.out  conf2-cifar10.out  conf2-mnist.out
+> cat outputs/conf2-cifar10.out
+config conf2 dataset cifar10 repetition 0
+config conf2 dataset cifar10 repetition 1
+config conf2 dataset cifar10 repetition 2
+```
+
 ## Conclusion
 Thanks to its matching capabilities, it is possible to use Snakemake to create
 rather complicated experimental workflows succinctly. It took a while for me to
