@@ -2,6 +2,7 @@
 layout: "post"
 title: "Using large numpy arrays and pandas dataframes with multiprocessing"
 date: 2020-06-19 09:00:00 +0200
+categories: Python
 ---
 
 Thanks to multiprocessing, it is relatively straightforward to write parallel
