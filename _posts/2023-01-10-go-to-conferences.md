@@ -66,9 +66,12 @@ approaching anybody at a conference, the worst that can happen is that they
 forget you after ten minutes.
 
 In particular, **senior people already *expect* to be approached by juniors**.
-Yann LeCun knows there will be a queue of people queuing to take a selfie with
+Yann LeCun knows there will be a bunch of people queuing to take a selfie with
 him, so one more person will not make much of a difference for him (I used my
-chance to ask him a research question instead).
+chance to ask him a research question instead). Similarly, team leads and
+principal investigators know that interested people will ask them questions
+about working with them or at their institution, and may even be actively
+looking for motivated people/
 
 Moreover, **everybody loves to talk about their work**, so there is also no need
 to worry about asking "stupid" or basic questions. Especially in this field,
