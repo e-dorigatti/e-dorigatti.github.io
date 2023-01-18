@@ -27,7 +27,6 @@ github_username:  e-dorigatti
 header_pages:
  - categories.html
  - about.md
- - cv.md
 
 # Build settings
 markdown: kramdown
