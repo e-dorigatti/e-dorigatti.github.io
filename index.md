@@ -11,7 +11,6 @@ layout: default
   <div>
     <h2>About me</h2>
     <p>
-
 My name is Emilio, I am a PhD student in statistics applied to computational
 immunology; in other words, I use mathematics and computers to study how the
 body fights diseases. My PhD is broadly focused on finding better ways to design
@@ -23,7 +22,14 @@ Previously, I studied computer science and data science, and I have a minor
 degree in innovation & entrepreneurship. I also have experience in the industry
 as a software developer, web developer, data engineer, data scientist, and
 consulting.
-    </p>
+</p>
+
+<p>
+I am graduating soon and <b>looking for a job</b> as a Senior Data Scientist
+in the greater Munich metropolitan area or remotely starting in September or
+later. If interested, feel free to check my <a href="/cv.html">curriculum vitae</a>!
+</p>
+
   </div>
 
   <div class="bot-margin">
