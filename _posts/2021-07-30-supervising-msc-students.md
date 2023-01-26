@@ -6,156 +6,93 @@ categories:
  - PhD
 ---
 
-I am a fan of knowledge transfer between peers, teaching what I know to others
-and learning back from them. At University I frequently helped my fellow course
-mates with the material, so I was very interested in formally mentoring students
-when I started my PhD. Luckily my supervisor, who is really talented at this,
-agreed to let me help him with supervising some Master's theses. In this article
-I present eight lessons that I learned by watching him at work and trying on my
-own. An edited version of this article appeared as a [Nature Career
-Column][ncc]!
+I am a fan of knowledge transfer between peers, teaching what I know to others and learning back from them.
+At University I frequently helped my fellow course mates with the material, so I was very interested in formally mentoring students when I started my PhD.
+Luckily my supervisor, who is really talented at this, agreed to let me help him with supervising some Master's theses.
+In this article, also published as a [Nature Career Column][ncc], I present eight lessons that I learned by watching him at work and trying on my own.
 
 <!-- more -->
 
-I supervised three Master's students in the past year. One of them was quite
-good and independent, did not need a lot of guidance and could take care of most
-things on his own, while the other two required a fair amount of help from us,
-one of them even coming close to not graduating successfully. Dealing with the
-difficult situations is when I learned the most important lessons, but
-regardless of the ability of the students a common thread soon appeared.
+I supervised three Master's students in the past year.
+One of them was quite good and independent, did not need a lot of guidance and could take care of most things on his own, while the other two required a fair amount of help from us, one of them even coming close to not graduating successfully.
+Dealing with the difficult situations is when I learned the most important lessons, but regardless of the ability of the students a common thread soon appeared.
 
-But first, here's a brief digression on how that happened. While I was writing a
-draft for this blog, I noticed an interesting article on Nature's newsletter.
-While I was reading it, I felt its style was quite similar to what I usually aim
-for in this blog: use headlines to highlight the important points, and elaborate
-on those with a few paragraphs. I then noticed the author of that column was a
-PhD student, and I thought: "how comes she has an article there? Why can she do
-that? Can I do that?". I quickly found [how to do it][ncs], finished the draft
-and sent it to them, and, after eight rounds of review in two months, the
-article was finally up! The editor was very responsive and we could iterate
-quickly on the manuscript, and the quality of the writing is so much better than
-what I had originally sent in. On the other hand, I sometimes felt the message
-was being warped a bit too much. Below you can find the original draft that I
-sent in, but you must head to [Nature's website][ncc] to read the edited piece.
+But first, here's a brief digression on how that happened.
+While I was writing a draft for this blog, I noticed an interesting article on Nature's newsletter.
+While I was reading it, I felt its style was quite similar to what I usually aim for in this blog: use headlines to highlight the important points, and elaborate on those with a few paragraphs.
+I then noticed the author of that column was a PhD student, and I thought: "how comes she has an article there? Why can she do that? Can I do that?".
+I quickly found [how to do it][ncs], finished the draft and sent it to them, and, after eight rounds of review in the course of two months, the article was finally up! The editor was very responsive and we could iterate quickly on the manuscript, and the quality of the writing is so much better than what I had originally sent in.
+On the other hand, I sometimes felt the message was being warped a bit too much.
+After the editing process was finished I had to agree to an Embargo Period of six months during which Nature had the exclusive right of publishing the final version on their website.
+As those six months are now over, I am finally allowed to publish the final version here, too.
 Enjoy!
 
-## Write a plan before offering the thesis
+This is a post-peer-review, pre-copyedit version of an article published in [Nature Career Column][ncc]. The final authenticated version is available online at: [https://doi.org/10.1038/d41586-021-02028-1](https://doi.org/10.1038/d41586-021-02028-1).
 
-Regardless of how the idea for a thesis comes about, it is important to make
-sure that the project is sufficiently specific and can be completed in about six
-months. Drafting a two-pages plan (think of an extended abstract for a
-conference) can be a good way to make sure the project is detailed and
-realistic. Such a document is also easy to share online, on the website of the
-group or Twitter, as well as on a job board at your department.
+## The lessons I learnt supervising master’s students for the first time
+**PhD student Emilio Dorigatti supported three junior colleagues during their degrees.**
 
-Make sure to cover the following: a general introduction to the research subject
-with a few key publications, the gap in the literature that the project aims to
-close, the goal of the thesis, that is, how exactly the gap identified above is
-to be closed, a breakdown of that goal into four or five tasks that are to be
-achieved during the course of the thesis, specific qualifications that
-candidates are expected to have, and formalities such as contact information,
-starting dates, whether a publication is to be expected at the end, and so on.
+I started my PhD wanting to improve not only my scientific abilities, but also ‘soft skills’ such as communication, mentoring and project management. To this end, I joined as many social academic activities as I could find, including journal clubs, seminars, teaching assistance, hackathons, presentations and collaborations.
 
-## Meet your student regularly
-Meeting regularly with your student and making sure that the project is on track
-and on time is the most important thing that you can do as a supervisor. In most
-cases, this requires less than an hour per week, but some students may require
-more attention. The weekly meetings should start with the student summarizing
-what they did in the previous week and what issues they encountered, followed by
-a discussion and brainstorming session on these issues and/or the next steps. At
-the end of the meeting it must be clear what is expected for the next week.
+I am a bioinformatics PhD student at the Munich School for Data Science in Germany, jointly supervised by Bernd Bischl at the Ludwig Maximilian University Munich and Benjamin Schubert at the Helmholtz Centre Munich, the German Research Center for Environmental Health. When I went to them asking to gain some experience in communication and mentoring soft skills, they suggested that I co-supervise three of Benjamin’s master’s students.
 
-The first few weeks should be used to get the student up to speed with the topic
-of the project. They should read the publications listed in the plan and a few
-more to get familiar with the state of the art and the specific methods that
-they are supposed to work with. During this time you should take care of
-administrative matters such as making sure that the student has accounts to
-access computational resources, VPN, e-mail, Wi-Fi, private GitHub repositories,
-and so on.
- 
-## Make them write regularly
-A good Master's thesis should contain about 60 pages of written material. Good
-writing takes time, especially for students who are not used to it and may even
-need to use a foreign language. Therefore, it is important to write regularly,
-or at the very least keep detailed notes of what should be included in the
-manuscript to avoid missing important details later on.
+At first, I felt out of my depth, so I simply sat in on their meetings and listened. After a few months, I began offering technical advice on programming. I then started proposing new analyses and contributions. Eventually I became comfortable enough to propose a new master’s project based on part of my PhD research; Benjamin and I are now interviewing candidates.
 
-As a supervisor you should occasionally remind your student to write what they
-are doing, and make sure that they are aware since the beginning how the
-manuscript should be structured, which chapters should be included, how long
-each of them should be, the expected writing style, what template to use, and
-other specifics. Make use of the weekly meetings to provide continuous feedback
-on the manuscript.
+I gained a great deal from this experience and I am grateful to both of my supervisors for supporting me, as well as to the students for staying motivated, determined and friendly throughout. Here are some of the things I learnt about how to ensure smooth collaboration and a happy outcome for all of us.
 
-The first two to four weeks at the beginning of the project are a good time to
-start writing the first chapters of their thesis, including an introduction to
-the topic and the required background knowledge, while the last three or four
-weeks should be allocated to writing the remaining chapters of the manuscript,
-namely results and conclusions, ensuring it forms a coherent whole, and
-preparing and rehearsing the slide deck for the defense.
+### Draft a project plan
 
-## Probe for correct understanding
-Probing for correct understanding is especially important when working with
-unprepared students. Asking "did you understand?" every five minutes is not
-enough and can even be counterproductive, scaring away the less assertive
-students. A way to avoid this situation is to encourage the student to rephrase
-what you explained with their own words, provide a detailed breakdown of a
-certain task, anticipate possible problems, and so on. This can also catch those
-situations when your student is convinced they understand something while they
-actually do not, for example when they have not considered the issue carefully
-enough.
- 
-## Adapt supervision to the student
-The best students are organized, independent and capable, but not everybody is
-born like that. Each student requires a different type of supervision to cater
-their weak points, and you should find the best method early in the course of
-the project. This may mean using Trello boards or a shared Google Doc to record
-tasks to help disorganized students, defining tasks in detail and walking
-through them carefully with dependent students, and taking extra time to explain
-and fill knowledge gaps of unprepared students.
+With Benjamin and Bernd, I put together a project plan for each of the master’s students. Drafting a two-page plan that ended up resembling an extended abstract for a conference forced us to consider each project in detail and helped to ensure that it was feasible for a student to carry out in their last semester of study.
 
-## Be supportive
-Always be supportive. A student avoiding communicating their problems because
-they fear you is counterproductive for everybody. Ask what they are struggling
-with and help them overcome obstacles by providing helpful resources. Take time
-to walk them through larger issues that they cannot solve on their own in a
-reasonable amount of time. Find ways to help them be confident. For example, one
-student of mine found it very helpful to text me brief updates outside of our
-scheduled meetings.
+If you’re a PhD student supervising others, sit down with your own supervisor and agree on your respective responsibilities as part of the project plan. At first, you might want your supervisor to follow you closely to help keep the project on the right path, but as you gain more experience and trust, you might request more autonomy and independence.
 
-If, on the opposite side, the student turns out to be fairly independent and
-capable on their own, let them work and do not micromanage. Simply verify their
-progress and gently push them for more. Be ready to catch them if they fall. I
-fell in this category and I appreciated my supervisor not getting in the way and
-letting me work as I preferred, while periodically letting me know that I was on
-the right track.
- 
-## When things go bad... Make another plan
-Not all projects can be successful despite your (and your student's) best
-efforts, therefore it is a good idea to have a plan B (and C) ready since the
-beginning. Halfway through the project is a good time to evaluate how likely it
-is that the thesis can be handed in on time and as originally planned. Your top
-priority however should be making the student graduate successfully. This may
-require either foregoing some of the tasks that were planned at the beginning or
-obtaining an extension of a few months if the situation allows it.
+Use the project plan to advertise the position and find a suitable student: share it online on the group’s website or on Twitter, as well as on the job board at your department. Advertise it to your students if you are teaching a related topic, and sit back and wait for applicants.
 
-The student should be made aware that the success of their thesis is at risk,
-and you should ask them to come up with a reasonable week-by-week plan until the
-end, with the mutual understanding that failing to adhere to said plan may
-seriously impact their chances of graduation. I did this with a former student,
-she stuck to the plan and the thesis was handed in on time.
+We structured the plans to include a general introduction to the research subject as well as a few key publications. We described the gap in the literature that the project aimed to close, with the proposed methodology and a breakdown of four or five tasks to be achieved during the project. My supervisors and I also agreed on and included specific qualifications that candidates should have, and formalities such as contact information, starting dates and whether a publication was expected at the end.
 
-## Have a final feedback round
-After the thesis is handed in and defended, you should meet the student one last
-time to tell them their grade, which should be based on a grading rubric that
-includes items such as scientific quality of the results and methods followed,
-problem solving skills, work organization, independence, good writing and
-presentations, and so on. Walk the student through each individual item and
-explain your motivation for the given score, best by recalling relevant events
-that happened in the past months. Offer the student the possibility of giving
-feedback on your supervision and suggest things they thought you could do
-better. Lastly, if you enjoyed working with them, consider offering them a
-position in your lab or writing a recommendation letter for them!
+Benjamin and I decided to propose publishable projects, sometimes as part of a larger paper. We always list the student as one of the authors.
+
+### Meet your student regularly
+
+I found that I met with most students for less than an hour per week, but some might require more attention. Most of the time, Benjamin joined the meeting, too. We started with the students summarizing what they had done the previous week and any issues they had encountered. We then had a discussion and brainstorming session, and agreed on possible next steps. I learnt that I do not need to solve all the student’s problems (it is their thesis, after all). Instead, Benjamin and I tried to focus on suggesting a couple of things they could try out. At the end of the meeting, we made sure it was clear what was expected for the next week.
+
+We used the first few weeks to get the students up to speed with the topic, encouraging them to read publications listed in the plan, and a few others, to familiarize themselves with the specific methods that they would be working with. We also addressed administrative matters such as making sure that the students had accounts to access computational resources: networks, e-mail, Wi-Fi, private GitHub repositories and so on.
+
+### Encourage regular writing
+
+Good writing takes time, especially for students who are not used to it, or who are writing in a foreign language. It is important to encourage them to write regularly, and to keep detailed notes of what should be included in the manuscript, to avoid missing key details later on. We tried to remind our students frequently how the manuscript should be structured, what chapters should be included, how long each should be, what writing style was expected, what template to use, and other specifics. We used our meetings to provide continuous feedback on the manuscript.
+
+The first two to four weeks of the project are a good time to start writing the first chapters, including an introduction to the topic and the background knowledge. We suggested allocating the last three or four weeks to writing the remaining chapters — results and conclusions — ensuring that the manuscript forms a coherent whole, and preparing and rehearsing the presentation for the oral examination.
+
+### Probe for correct understanding
+
+In our weekly meetings, or at other times when I was teaching, I quickly realized that asking ‘did you understand?’ or ‘is that OK?’ every five minutes is not enough. It can even be counterproductive, scaring away less-assertive students.
+
+I learnt to relax a little and take a different approach: when I explained something, I encouraged the students to explain it back in their own words, providing detailed breakdowns of a certain task, anticipating possible problems, and so on.
+
+Ultimately, this came down to probing for understanding of the science, rather than delivering a lecture or grilling an interviewee. Sometimes this approach helps when a student thinks they fully understand something but actually don’t. For example, one of our students was less experienced in programming than others, so for more difficult tasks, we broke the problem down and wrote a sketch of the computer code that they would fill in on their own during the week.
+
+### Adapt supervision to the student
+
+Each student requires a different type of supervision, and we tried to adapt our styles to accommodate that. That could mean using Trello project-management boards or a shared Google Doc to record tasks; defining tasks in detail and walking through them carefully; or taking extra time to explain and to fill knowledge gaps. I tried to be supportive by reminding students that they could always send an e-mail if they were stuck on a problem for too long. One of the students found it very helpful to text brief updates outside of scheduled meetings, as a way to hold themselves accountable.
+
+Sometimes, if we felt a student needed to be challenged, we proposed new tasks that were not in the original plan or encouraged them to follow their interest, be it diving into the literature or coming up with further experiments and research questions.
+
+One student conducted a literature review and summarized the pros and cons of the state-of-the-art technology for a follow-up idea we had. That saved some time when we picked up the project after the student left; they learnt lots of interesting things; and the discussion section of the manuscript was much more interesting as a result.
+
+### When things go badly, make another plan
+
+Not all projects can be successful, despite your (and your student’s) best efforts. So, as part of each project, my supervisors and I prepared a plan B (and C), working out which tasks were essential and which were just a nice addition. This included a simpler research question that required less work than the original. The initial plan for one of our projects was to compare a newly proposed method with the usual way of doing things, but the new method turned out to be much more difficult than anticipated, so we decided not to do the comparison, and just showed how the new method performed.
+
+Halfway through the project is a good time to evaluate how likely it is that the thesis will be handed in on time and as originally planned. The top priority is to help the student graduate. That might entail either forgoing some of the tasks planned at the beginning, or obtaining an extension of a few months if possible.
+
+### Have a final feedback round
+
+After the oral examinations, Benjamin and I met to decide the students’ final grades on the basis of the university’s rubric. We then met the students one last time to tell them our decision, going through each item in the rubric and explaining the motivation for the score we had given. We tried to recall relevant events from the past months to make each student feel the grading was fair.
+
+We also remembered to ask the student for feedback on our supervision and to suggest things they thought we could do better.
+
+Lastly, I encouraged those students to apply for open positions in our lab, and offered to write recommendation letters for them.
 
 
  [ncc]: https://www.nature.com/articles/d41586-021-02028-1
