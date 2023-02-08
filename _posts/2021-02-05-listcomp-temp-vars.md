@@ -34,8 +34,8 @@ list and use a nested comprehension:
 [
     y
     for x in range(10)
-    if x % 2 == 0
     for y in [2 * x]
+    if x % 2 == 0
     if y % 8 == 0
 ]
 ```
@@ -48,12 +48,12 @@ earlier:
 [
     process(each, tmp1, tmp2, tmp3)
     for each in lst
-    if cond(each)
     for tmp1 [ compute_tmp1(each) ]
-    if cond1(tmp1)
     for tmp2 [ compute_tmp2(each, tmp1) ]
-    if cond2(tmp1, tmp2)
     for tmp3 [ compute_tmp3(each, tmp1, tmp2) ]
+    if cond(each)
+    if cond1(tmp1)
+    if cond2(tmp1, tmp2)
     if cond3(tmp1, tmp2, tmp3)
 ]
 ```
@@ -63,3 +63,4 @@ uncommon enough to trigger a WTF in pretty much everybody reading this for the
 first time.
 
 ![](https://mk0osnewswb2dmu4h0a.kinstacdn.com/images/comics/wtfm.jpg){: .center-image }
+
