@@ -34,8 +34,8 @@ list and use a nested comprehension:
 [
     y
     for x in range(10)
-    for y in [2 * x]
     if x % 2 == 0
+    for y in [2 * x]
     if y % 8 == 0
 ]
 ```
@@ -48,12 +48,12 @@ earlier:
 [
     process(each, tmp1, tmp2, tmp3)
     for each in lst
-    for tmp1 [ compute_tmp1(each) ]
-    for tmp2 [ compute_tmp2(each, tmp1) ]
-    for tmp3 [ compute_tmp3(each, tmp1, tmp2) ]
     if cond(each)
+    for tmp1 [ compute_tmp1(each) ]
     if cond1(tmp1)
+    for tmp2 [ compute_tmp2(each, tmp1) ]
     if cond2(tmp1, tmp2)
+    for tmp3 [ compute_tmp3(each, tmp1, tmp2) ]
     if cond3(tmp1, tmp2, tmp3)
 ]
 ```
