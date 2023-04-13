@@ -49,7 +49,7 @@ While there is no reliable measurement or even agreed-upon definition of develop
 This leads me to the following conjectures:
  1. **In general, current average developers will become moderately more productive.**
      Actually writing code is a relatively minor task of software developers, I would estimate it at 30% or so, with the remaining time spent in thinking and discussing what needs to be done, how to best do it, and verifying that it was done properly.
-     In this case, assuming that LLMs will make them five times more productive (just an arbitrary number on the optimistic side of the spectrum to prove my point), the overall productivity gain will be 32%.
+     In this case, assuming that LLMs will make them five times more productive (according to a recent study[^cop] this number may be closer to twice as productive), the overall productivity gain will be 32%.
      Even assuming, generously, a 50% of purely coding workload, the productivity gain would be of 67%.
      These are considerable numbers for sure, but not as groundbreaking as some would lead you to believe.
      And yes, the demos of LLMs writing code for simple apps and websites are truly impressive, but the vast majority of the time is spent modifying old node, not writing new code.
@@ -255,8 +255,13 @@ It is also possible, on the contrary, that LLMs will increase the average skill 
 It is really hard to predict the future.
 Even if you do not agree with my conclusion, I hope that you enjoyed this line of thinking, and that I raised some interesting points for you to ponder about.
 If this is the case, feel free to share this article and/or [get in touch](/about).
+Obviously, other people who are smarter than I am also thought at these problems, and studied the impact of LLMs on the economy as a whole, so go read those as well.[^eco1][^eco2]
 
   [^pp]: [https://en.wikipedia.org/wiki/Pareto_principle](https://en.wikipedia.org/wiki/Pareto_principle)
   [^ot]: [https://thegradient.pub/othello/](https://thegradient.pub/othello/)
+  [^cop]: [https://arxiv.org/abs/2302.06590](https://arxiv.org/abs/2302.06590)
   [^lm]: [https://en.wikipedia.org/wiki/The_Market_for_Lemons](https://en.wikipedia.org/wiki/The_Market_for_Lemons)
   [^lmc]: [https://en.wikipedia.org/wiki/The_Market_for_Lemons#Conditions_for_a_lemon_market](https://en.wikipedia.org/wiki/The_Market_for_Lemons#Conditions_for_a_lemon_market)
+  [^eco1]: [https://arxiv.org/abs/2303.10130](https://arxiv.org/abs/2303.10130)
+  [^eco1]: [https://arxiv.org/abs/2303.10130](https://arxiv.org/abs/2303.10130)
+  [^eco2]: [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4350925](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4350925)
