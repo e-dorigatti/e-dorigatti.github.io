@@ -13,11 +13,11 @@ This tutorial presents the simplest possible implementation of diffusion models 
 
 Generative models learn to generate new samples (e.g., images) starting from a latent variable following a tractable (i.e., simple) distribution.
 Diffusion models have recently emerged as a very powerful and capable type of generative models, underlying most of the latest astonishing examples of generative AI that have captured public imagination, such as Stable Diffusion,[^3] Midjourney,[^4] and DALL.E[^2].
-Diffusion models do this by first establishing a simple way to transform samples from the distribution of interest (the images) to the tractable distribution, then training a neural network to reverse this process.
-In this way, the network learns how to go back from the tractable distribution to the distribution of interest.
+Diffusion models do this by first establishing a simple way to transform samples from the distribution of interest (the images) to a Gaussian distribution, then training a neural network to reverse this process.
+In this way, the network learns how to transform samples from the Gaussian into samples from the distribution of interest.
 
-Diffusion refers to the gradual corruption of training examples by repeatedly adding a small amount of noise, mimicing the way heat diffuses through a material until it reaches an uniform temperature.
-After a few hundreds or thousands of noise diffusion steps, the information in the original sample is completely lost, such that the result is indistinguishable from the simple distribution that we will use as a starting point to generate new samples.
+Diffusion refers to the gradual corruption of training examples by repeatedly adding a small amount of noise, mimicking the way heat diffuses through a material until it reaches an uniform temperature.
+After a few hundreds or thousands of noise diffusion steps, the information in the original sample is completely lost, such that the result is indistinguishable from the Gaussian that we will use as a starting point to generate new samples.
 Figure 2 from the paper (Ho, 2020) demonstrates this process graphically:
 
 ![diffusion](/images/diffusion/diffusion.png)
@@ -204,7 +204,7 @@ var_model = torch.nn.Sequential(
 )
 ```
 
-And let's train them:
+Let's now train them:
 
 
 ```python
