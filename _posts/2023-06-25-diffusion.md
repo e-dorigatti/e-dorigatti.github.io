@@ -12,11 +12,12 @@ This tutorial presents the simplest possible implementation of diffusion models 
 <!-- more -->
 
 Generative models learn to generate new samples (e.g., images) starting from a latent variable following a tractable (i.e., simple) distribution.
+Diffusion models have recently emerged as a very powerful and capable type of generative models, underlying most of the latest astonishing examples of generative AI that have captured public imagination, such as Stable Diffusion,[^3] Midjourney,[^4] and DALL.E[^2].
 Diffusion models do this by first establishing a simple way to transform samples from the distribution of interest (the images) to the tractable distribution, then training a neural network to reverse this process.
 In this way, the network learns how to go back from the tractable distribution to the distribution of interest.
 
-Diffusion refers to a gradual corruption of the training samples by repeatedly adding a small amount of noise.
-After a few hundreds or thousands of steps, the noise overwhelms the information in the original sample, such that the result is indistinguishable from the simple distribution that we will use as a starting point to generate new samples.
+Diffusion refers to the gradual corruption of training examples by repeatedly adding a small amount of noise, mimicing the way heat diffuses through a material until it reaches an uniform temperature.
+After a few hundreds or thousands of noise diffusion steps, the information in the original sample is completely lost, such that the result is indistinguishable from the simple distribution that we will use as a starting point to generate new samples.
 Figure 2 from the paper (Ho, 2020) demonstrates this process graphically:
 
 ![diffusion](/images/diffusion/diffusion.png)
@@ -132,6 +133,7 @@ As you can see, adding noise gradually transforms all samples into a Normal $\ma
 
 To keep things as simple as possible, here we use the loss in Equation 3 in the paper without any of the optimizations presented later, which only play a role for complex, real-world distributions.
 
+In this case, diffusion models are trained by first corrupting the training examples, then trying to reconstruct the cleaner examples from the noisy examples at each step of the corruption process.
 The loss is an upper bound on the negative log likelihood:
 
 $$
@@ -148,6 +150,8 @@ p_\theta(x_{t-1}|x_t):=\mathcal{N}(x_{t-1} ; \mu_\theta(x_t,t), \Sigma_\theta(x_
 $$
 
 Note that we are training two neural networks, $\mu_\theta$ and $\Sigma_\theta$, which take as input a noisy sample $x_t$ and the step $t$, and try to predict the parameters of the distribution of the sample $x_{t-1}$ to which noise was added.
+Intuitively, we are training these networks to maximize the predicted probability of observing the uncorrputed example $x_{t-1}$ based on $x_t$, i.e., the term $p_\theta(x_{t-1}\vert x_t)$ in the loss, for each diffusion step.
+The other terms in the loss involving $q(x_t\vert x_{t-1})$ are not necessary to learn a good generative model, since they are constant, but are useful as a "frame of reference" to make a "perfect" generative model achieve a loss of 0.
 
 The loss is implemented in the function below.
 This function requires the entire diffusion trajectory for the training samples, as well as the two neural networks that define the inverse process:
@@ -229,9 +233,6 @@ for e in bar:
 ```
 
 
-      0%|          | 0/1000 [00:00<?, ?it/s]
-
-
 We can make sure that the model has converged by inspecting the loss:
 
 
@@ -310,3 +311,6 @@ It is very similar to the initial data distribution, which means that our model 
 I hope you found this tutorial useful! You can download a notebook with this code [here](/attachments/diffusion.ipynb).
 
   [^1]: [http://arxiv.org/abs/2006.11239](http://arxiv.org/abs/2006.11239)
+  [^2]: [https://openai.com/dall-e-2](https://openai.com/dall-e-2)
+  [^3]: [https://ommer-lab.com/research/latent-diffusion-models/](https://ommer-lab.com/research/latent-diffusion-models/)
+  [^4]: [https://www.midjourney.com](https://www.midjourney.com)
