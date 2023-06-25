@@ -151,6 +151,7 @@ $$
 
 Note that we are training two neural networks, $\mu_\theta$ and $\Sigma_\theta$, which take as input a noisy sample $x_t$ and the step $t$, and try to predict the parameters of the distribution of the sample $x_{t-1}$ to which noise was added.
 Intuitively, we are training these networks to maximize the predicted probability of observing the uncorrputed example $x_{t-1}$ based on $x_t$, i.e., the term $p_\theta(x_{t-1}\vert x_t)$ in the loss, for each diffusion step.
+Remember that $x_t$ was generated earlier from $x_{t-1}$ by adding noise; the networks have to learn to undo the noise.
 The other terms in the loss involving $q(x_t\vert x_{t-1})$ are not necessary to learn a good generative model, since they are constant, but are useful as a "frame of reference" to make a "perfect" generative model achieve a loss of 0.
 
 The loss is implemented in the function below.
