@@ -4,7 +4,7 @@ title: "Transitive coins"
 date: 2023-03-20 12:00:00 +0200
 categories:
  - Math
- - riddles
+ - Riddles
 ---
 
 Three coins each show heads with probability 3/5 and tails otherwise.
