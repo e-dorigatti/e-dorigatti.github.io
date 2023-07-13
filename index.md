@@ -68,6 +68,13 @@ consulting (<a href="/cv.html">curriculum vitae</a>).
           {%- if site.show_excerpts -%}
               {{ post.excerpt | strip_html }}
           {%- endif -%}
+
+          <div style="margin-top: 1em">
+            {% for cat in post.categories %}
+              <a href="/categories#{{cat | slugize}}">#{{ cat | slugize }}</a>
+            {% endfor %}
+          </div>
+
         </li>
       {%- endfor -%}
     </ul>
