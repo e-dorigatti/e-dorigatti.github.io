@@ -21,7 +21,7 @@ a particular kind of vaccines (<a href="{% post_url 2019-08-16-what_is_my_phd_ab
 Previously, I studied computer science and data science, and I have a minor
 degree in innovation & entrepreneurship. I also have experience in the industry
 as a software developer, web developer, data engineer, data scientist, and
-consulting.
+consulting (<a href="/cv.html">curriculum vitae</a>).
 </p>
 
   </div>
