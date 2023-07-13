@@ -24,12 +24,6 @@ as a software developer, web developer, data engineer, data scientist, and
 consulting.
 </p>
 
-<p>
-I am graduating soon and <b>looking for a job</b> as a Senior Data Scientist
-in the greater Munich metropolitan area or remotely starting in September or
-later. If interested, feel free to check my <a href="/cv.html">curriculum vitae</a>!
-</p>
-
   </div>
 
   <div class="bot-margin">
