@@ -60,7 +60,7 @@ function convertElementArrayToStringArray(element_array) {
 }
 ```
 
-This function converts HTML nodes to their `outerHTML` representation, while keeps text nodes as they are.
+This function converts HTML nodes to their `outerHTML` representation, while keeping text nodes as they are.
 
 Executing the query and saving the result is then just a matter of chaining these two functions:
 
@@ -115,8 +115,9 @@ For example, executing `saveSelectorQuery($x("//h2"))` on this very web page (tr
 ["<h2 id=\"the-trick\">The trick</h2>","<h2 id=\"usage\">Usage</h2>","<h2 class=\"footer-heading\">Emilio's Blog</h2>"]
 ```
 which are exactly the second-level headers in the post.
+To only get the titles of the headers, without the surrounding HTML, simply append '/text()' at the end of the previous query.
 
-After this, simply read the JSON file with your favorite programming language and have fun!
+After this, read the JSON file with your favorite programming language and have fun!
 
 
 [xp]: https://en.wikipedia.org/wiki/XPath
