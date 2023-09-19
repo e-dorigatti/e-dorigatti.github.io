@@ -19,10 +19,10 @@ By the way, this problem is number 16 in Section 2.7 in the book "One thousands 
 Intuitively I thought that going first would always be the best option, because it would allow the first player to choose the coin that gives the best chances of winning, while going second would put them at the mercy of their opponent.
 The surprising solution comes from computing the optimal strategy, so let's get to it.
 
-First, note the wrong approach to the problem, which is to go first and choose the coin that gives the best expected score.
-The expected scores would be 10x3/5+2x2/5=20/5 for the first coin, 4x3/5+4x2/5=20/5 for the second, and 3x3/5+20x2/5=49/25 for the third, thus this strategy would pick the third coin.
-However, note that in this way you have a probability of 3/5 of getting three points, which is worse than any outcome with the second coin and heads of the first coin, also happening with probability 3/5.
-Therefore, this does not seem like a good strategy.
+First, note the wrong, but intuitive, approach to the problem: go first and choose the coin that gives the best expected score.
+The expected scores would be 10x3/5+2x2/5=34/5 for the first coin, 4x3/5+4x2/5=20/5 for the second, and 3x3/5+20x2/5=49/25 for the third, thus this strategy would choose first and pick the third coin.
+However, in this way you have a probability of 3/5 of getting three points, which is worse than any outcome of the second coin and heads of the first coin, which also happens with probability 3/5.
+Therefore, this does not seem like a good strategy, as there is a larger probability of losing than winning.
 
 Let's instead pretend to be the first player, and compute the probability of winning for all possible choices of coin.
 For convenience, here's a recap of how the score for each throw:
