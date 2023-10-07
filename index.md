@@ -11,17 +11,13 @@ layout: default
   <div>
     <h2>About me</h2>
     <p>
-My name is Emilio, I am a PhD student in statistics applied to computational
-immunology; in other words, I use mathematics and computers to study how the
-body fights diseases. My PhD is broadly focused on finding better ways to design
-a particular kind of vaccines (<a href="{% post_url 2019-08-16-what_is_my_phd_about %}">read more</a>).
+My name is Emilio, I am a postdoctoral researcher at <a href="https://www.boehringer-ingelheim.com/">Boehringer Ingelheim]</a>, a pharma company, where I use artificial intelligence to help my colleagues create safer drugs.
+I obtained my PhD at the LMU University in Munich, Germany, where I studied ways to <a href="{% post_url 2019-08-16-what_is_my_phd_about %}">design more effective cancer vaccines</a>.
 </p>
 
 <p>
-Previously, I studied computer science and data science, and I have a minor
-degree in innovation & entrepreneurship. I also have experience in the industry
-as a software developer, web developer, data engineer, data scientist, and
-consulting (<a href="/cv.html">curriculum vitae</a>).
+Previously, I studied computer science and data science, and I have a minor degree in innovation & entrepreneurship.
+I also have experience in the industry as a  data engineer, data scientist, and full-stack software engineer (<a href="/cv.html">curriculum vitae</a>).
 </p>
 
   </div>
