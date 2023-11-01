@@ -230,6 +230,7 @@ $$
 
 If this transformation looks rather obscure to you, rest assured it is to me, too.
 But it is easy to justify it intuitively via the reasoning we did above: if the first car is in the slowest $u\%$ of all cars, then the probability that each new car is faster than that is $(1-u)\%$, and the probability of having $n$ cars in a queue is $u(1-u)^{n-1}$ (always accounting for the very last car that is even slower than the first one).
+And since we do not know what $u$ is, we have to try all possible values.
 We use the transformation above to work with quantiles instead of the actual velocity of the cars.
 This has a beautiful consequence:
 
@@ -319,5 +320,5 @@ $$
 
 Uh oh. This series diverges to infinity.
 
-I am afraid that long queues will exist even in the most advanced alien society (based on roads).
+I am afraid that long queues will exist even in the most advanced alien society (as long as they are based on roads).
 
