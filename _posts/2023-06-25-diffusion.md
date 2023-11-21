@@ -175,11 +175,13 @@ def compute_loss(forward_distributions, forward_samples, mean_model, var_model):
         xprev = forward_samples[t - 1]  # x(t-1)
         q = forward_distributions[t]    # q( x(t) | x(t-1) )
 
-        # compute p( x(t-1) | x(t) ) as equation 1
+        # normalize t between 0 and 1 and add it as a new column
+        # to the inputs of the mu and sigma networks
         xin = torch.cat(
-            (xt, t * torch.ones(xt.shape) / len(forward_samples)),
+            (xt, (t / len(forward_samples)) * torch.ones(xt.shape[0], 1)),
             dim=1
         )
+        # compute p( x(t-1) | x(t) ) as equation 1
         mu = mean_model(xin)
         sigma = var_model(xin)
         p = torch.distributions.Normal(mu, sigma)
