@@ -193,8 +193,9 @@ def compute_loss(forward_distributions, forward_samples, mean_model, var_model):
     return loss / len(forward_samples)
 ```
 
-Let us now define two very simple neural networks to predict the mean and variance:
-
+Let us now define two very simple neural networks to predict the mean and variance.
+Both of these networks take two inputs: the noisy sample $x_t$ and the normalized time-step $t$.
+As you can see from the snippet above, the time-step is added as an additional column feature, and, since the input is also one-dimensional, the total input size is two.
 
 ```python
 mean_model = torch.nn.Sequential(
