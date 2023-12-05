@@ -5,6 +5,8 @@ layout: post
 categories: Development
 ---
 
+If you're a developer or data scientist using SLURM on compute nodes, you might have faced some challenges with debugging and compatibility issues. In this blog post, I share a simple solution that enables you to use IDE debugging directly on compute nodes, greatly improving your workflow. Although the focus is on Visual Studio Code, the same approach can be applied to other IDEs that support remote development via SSH.
+
 <!-- more -->
 
 ## The problem with software development on SLURM
