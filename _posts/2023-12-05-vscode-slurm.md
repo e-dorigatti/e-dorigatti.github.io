@@ -21,12 +21,12 @@ I will focus on Visual Studio Code, but the same trick should be applicable to o
 
 ## SSH access to compute nodes
 
-An innocent solution would be to SSH directly to a compute node.
-Some SLURM clusters however forbid users from doing so because otherwise they would be able to "steal" all the resources on that node, defeating the purpose of SLURM (which is to share resources).
-And if your SLURM clusters allows you to SSH into compute nodes then you should still be polite and not do it to use compute resources.
+An innocent solution would be to directly SSH to a compute node, but this is not a good idea because you would be able to "steal" all the resources on that node, defeating the very purpose of SLURM (which is to share resources among users).
+It is for this reason that some SLURM clusters do not even allow users to SSH into compute nodes.
+And if your SLURM clusters allows it, you should still be polite and not do it to get compute resources.
 
 Actually, there is a way to achieve the same result while still respecting resource allocation: run a SSH server in a SLURM job!
-For this, we can use [Dropbear][dbr], a light SSH server that can be deployed without root.
+For this, we can use [Dropbear][dbr], a lightweight SSH server that can be started by normal users.
 
 ## Step 1: Set up dropbear
 
@@ -45,7 +45,7 @@ You can find the full instructions [in the repository][dbi], but a basic install
 > make install DESTDIR=install
 ```
 
-If you do not have a compiler available, you can use a user-local package manager such as [Minoconda](https://docs.conda.io/projects/miniconda/en/latest/) or [Micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) to install the [compiler tools package](https://docs.conda.io/projects/conda-build/en/latest/resources/compiler-tools.html).
+If you do not have a compiler available, you can use a package manager such as [Minoconda](https://docs.conda.io/projects/miniconda/en/latest/) or [Micromamba](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) to install the [compiler tools package](https://docs.conda.io/projects/conda-build/en/latest/resources/compiler-tools.html) for your user only.
 
 After this, the dropbear binary will be in `~/dropbear/install/usr/local/sbin/dropbear`.
 We keep everything in our home folder to avoid messing up with the login node and angering the sysadmins :)
@@ -53,7 +53,8 @@ We keep everything in our home folder to avoid messing up with the login node an
 The last step to prepare the server is to generate a key file:
 
 ```
-> ~/dropbear/install/usr/local/bin/dropbearkey -t ecdsa -s 521 -f ~/dropbear/install/server-key
+> ~/dropbear/install/usr/local/bin/dropbearkey \
+    -t ecdsa -s 521 -f ~/dropbear/install/server-key
 ```
 
 ## Step 2: Start the SSH server in a SLURM job
@@ -83,10 +84,14 @@ DROPBEAR=~/dropbear/install
 #  -s    Disable password logins
 #  -p    Port where to listen for connections
 #  -P    Create pid file PidFile
-$DROPBEAR/usr/local/sbin/dropbear -r $DROPBEAR/server-key -F -E -w -s -p 64321 -P $DROPBEAR/var/run/dropbear.pid
+$DROPBEAR/usr/local/sbin/dropbear \
+    -r $DROPBEAR/server-key -F -E -w -s -p 64321 \
+    -P $DROPBEAR/var/run/dropbear.pid
+> # submit the job
+> sbatch run-vscode-server-gpu.sh
 ```
 
-Note that dropbear will only let you connect, but not other users.
+Dropbear will use the authorized keys in `~/.ssh/authorized_keys` to determine who can connect and who cannot, meaning that you do not have to worry about other users connecting to this SSH server.
 
 Now, simply submit this job before your morning coffee and wait for it to start:
 
@@ -107,7 +112,7 @@ In case of troubles the log file should contain more information, but in case of
 
 ## Step 3: Configure Visual Studio Code
 
-Before doing this, set up Visual Studio Code for remote development via SSH following the [official guide][vsr].
+Before doing this, set up Visual Studio Code for remote development via SSH following the [official guide][vsr], including [SSH key-based authentication][sshk].
 Next, open the SSH config file by searching for "Remote-SSH: Open SSH Configuration File..." from the command palette (invoked via `Ctrl+Shift+P`), and add the following configuration:
 
 ```
@@ -116,13 +121,13 @@ Host hpc-login
   HostName login.cluster.com
   User edo
 
-# Compute node with the server, note:
+# Compute node where the dropbear is running. Note:
 #  - The HostName must correspond to the one you saw in `squeue`
 #  - ProxyJump instructs VS Code to connect to the compute node via the login node
 #  - The Port is the same we used in `run-vscode-server-gpu.sh`
 Host hpc-compute
   HostName supergpu03
-  ProxyJump login.cluster.com
+  ProxyJump hpc-login
   User edo
   Port 64321
 ```
@@ -136,10 +141,11 @@ Finally, connect to the server running on the compute node as you would usually 
 
 ## Conclusion
 
-Now you can use all the power of visual studio code while respecting your resource allocation.
+Now you can use all the power of Visual Studio Code with compute resources such as GPUs while respecting your resource allocation.
 
 Happy debugging!
 
  [dbr]: https://github.com/mkj/dropbear
  [dbi]: https://github.com/mkj/dropbear/blob/master/INSTALL.md
  [vsr]: https://code.visualstudio.com/docs/remote/ssh
+ [sshk]: https://code.visualstudio.com/docs/remote/troubleshooting#_configuring-key-based-authentication
