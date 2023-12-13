@@ -5,7 +5,7 @@ layout: post
 categories: Development
 ---
 
-If you're a developer or data scientist using SLURM on compute nodes, you might have faced some challenges with debugging and compatibility issues. In this blog post, I share a simple solution that enables you to use IDE debugging directly on compute nodes, greatly improving your workflow. Although the focus is on Visual Studio Code, the same approach can be applied to other IDEs that support remote development via SSH.
+If you're a developer or data scientist using SLURM to handle your compute workloads, you have surely encountered issues in debugging your code on compute nodes. In this blog post, I share a simple solution for that, allowing you to develop and debug code running directly with the compute resources you need. Although the focus is on Visual Studio Code, the same approach can be applied to other IDEs that support remote development via SSH.
 
 <!-- more -->
 
@@ -123,7 +123,8 @@ Host hpc-login
 
 # Compute node where the dropbear is running. Note:
 #  - The HostName must correspond to the one you saw in `squeue`
-#  - ProxyJump instructs VS Code to connect to the compute node via the login node
+#  - ProxyJump instructs VS Code to connect to the compute node via the login node;
+#    it is not necessary if you are able to directly connect to the compute node.
 #  - The Port is the same we used in `run-vscode-server-gpu.sh`
 Host hpc-compute
   HostName supergpu03
