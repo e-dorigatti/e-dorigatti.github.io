@@ -60,7 +60,10 @@ The last step to prepare the server is to generate a key file:
 ## Step 2: Start the SSH server in a SLURM job
 
 Next, we submit a SLURM job that will run the SSH server.
-I do this by using the following script:
+Note that sessions connecting to this SSH server will *not* inherit the environment variables of the SLURM job, missing essential variables such as `CUDA_VISIBLE_DEVICES` (indicating which GPUs can be used by VSCode and all our scripts), `SLURM_CPUS_PER_TASK` (telling the processes we launch how many CPUs they can use) and so on.
+Therefore, before starting the SSH server we are going to save all these useful environment variables into a file, which you should source before running any process that needs to respect the resource allocation from SLURM.
+
+This can be done by using the following script:
 
 ```
 > cat run-vscode-server-gpu.sh
@@ -76,6 +79,17 @@ I do this by using the following script:
 
 DROPBEAR=~/dropbear/install
 
+### store relevant environment variables to a file in the home folder
+env | awk -F= '$1~/^(SLURM|CUDA|NVIDIA_)/{print "export "$0}' > ~/.slurm-envvar.bash
+
+# here we make sure to remove this file when this SLURM job terminates
+cleanup() {
+    echo "Caught signal - removing SLURM env file"
+    rm -f ~/.slurm-envvar.bash
+}
+trap 'cleanup' SIGTERM
+
+### start the SSH server
 # dropbear arguments:
 #  -r    Server key
 #  -F    Don't fork into background
@@ -110,7 +124,7 @@ In case of troubles the log file should contain more information, but in case of
 [33449] Dec 05 09:52:03 Not backgrounding
 ```
 
-## Step 3: Configure Visual Studio Code
+## Step 3: Configure the Shell and Visual Studio Code
 
 Before doing this, set up Visual Studio Code for remote development via SSH following the [official guide][vsr], including [SSH key-based authentication][sshk].
 Next, open the SSH config file by searching for "Remote-SSH: Open SSH Configuration File..." from the command palette (invoked via `Ctrl+Shift+P`), and add the following configuration:
@@ -135,6 +149,15 @@ Host hpc-compute
 
 Every time you start a new SSH server in this way you should make sure that the `HostName` of the `hpc-compute` host matches what is listed in `squeue`.
 Or you could try to run the server always on the same node via `#SBATCH --nodelist supergpu03` in the server submit script, but you may have to wait for resources to free before your server can start.
+
+Next, to make sure that Visual Sudio Code correctly uses the resources reserved by SLURM, and no more, we need to load in our shell the environment variables that we saved earlier when submitting the job. According to the [official solution](https://github.com/microsoft/vscode-remote-release/issues/1722#issuecomment-1938924435) This can be done by sourcing the file from your `/.bashrc`:
+
+```
+# source slurm environment if we're connecting through code-tunnel
+[ -f ~/.code-tunnel-env.bash ] && source ~/.code-tunnel-env.bash
+```
+
+With this solution, you do not need to remember to source that environment file, and all programs will automatically respect the resource allocations.
 
 ## Step 4: Connect to the compute node
 
