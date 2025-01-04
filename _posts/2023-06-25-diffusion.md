@@ -175,11 +175,13 @@ def compute_loss(forward_distributions, forward_samples, mean_model, var_model):
         xprev = forward_samples[t - 1]  # x(t-1)
         q = forward_distributions[t]    # q( x(t) | x(t-1) )
 
-        # compute p( x(t-1) | x(t) ) as equation 1
+        # normalize t between 0 and 1 and add it as a new column
+        # to the inputs of the mu and sigma networks
         xin = torch.cat(
-            (xt, t * torch.ones(xt.shape) / len(forward_samples)),
+            (xt, (t / len(forward_samples)) * torch.ones(xt.shape[0], 1)),
             dim=1
         )
+        # compute p( x(t-1) | x(t) ) as equation 1
         mu = mean_model(xin)
         sigma = var_model(xin)
         p = torch.distributions.Normal(mu, sigma)
@@ -191,8 +193,9 @@ def compute_loss(forward_distributions, forward_samples, mean_model, var_model):
     return loss / len(forward_samples)
 ```
 
-Let us now define two very simple neural networks to predict the mean and variance:
-
+Let us now define two very simple neural networks to predict the mean and variance.
+Both of these networks take two inputs: the noisy sample $x_t$ and the normalized time-step $t$.
+As you can see from the snippet above, the time-step is added as an additional column feature, and, since the input is also one-dimensional, the total input size is two.
 
 ```python
 mean_model = torch.nn.Sequential(
