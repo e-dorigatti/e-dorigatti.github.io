@@ -70,8 +70,8 @@ def test_app():
     # ...
 ```
 
-There is just a small gotcha with this solution: subsequent calls to `at.run()` will not have the uploaded files in the session state, only the first call after setting the session state has them.
-Handling this behavior should only require minor changes to your app, however.
+There is just a small gotcha with this solution: subsequent calls to `at.run` will not have the uploaded files in the session state, only the first call after setting the session state has them.
+I am not too deep into the streamlit internals to know why this happens, but a workable solution to this would be to manually set the uploaded files before every call to `at.run`.
 
 ## Demo
 
