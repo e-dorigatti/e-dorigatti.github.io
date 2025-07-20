@@ -11,10 +11,11 @@ training, evaluation, and interpretation, until model deployment, monitoring, an
 computer science and mathematics, eager to work on cutting-edge AI applications in the pharmaceutical industry,
 keen to continuously grow, learn and share.
 
-[LinkedIn](https://www.linkedin.com/in/edorigatti/) / [Google Scholar](https://scholar.google.com/citations?user=LMBLCLoAAAAJ&hl=en) / [PDF](/attachments/CV-Emilio-Dorigatti.pdf)
+[LinkedIn](https://www.linkedin.com/in/edorigatti/) / [Google Scholar](https://scholar.google.com/citations?user=LMBLCLoAAAAJ&hl=en)
 
 Selected Professional Experience:
-  - Postdoctoral Scientist, Boehringer Ingelheim, Ingelheim, Germany, 10/2023 -- Now
+  - Data Scientist, Boehringer Ingelheim, Biberach an der Riss, Germany, 04/2025 -- Now
+  - Postdoctoral Scientist, Boehringer Ingelheim, Ingelheim, Germany, 10/2023 -- 04/2025
   - Machine Learning Research Scientist, Helmholtz Zentrum, Munich, Germany, 07/2019 -- 09/2023
   - Data Scientist (working student), BrightCape B.V., Eindhoven, the Netherlands, 03/2017 -- 06/2017
   - Machine Learning Engineer (working student), Wikidata, Trento, Italy, 02/2016 -- 06/2016
