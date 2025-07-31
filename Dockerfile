@@ -40,7 +40,11 @@ ENV PATH=$GEM_HOME/bin:$PATH
 
 EXPOSE 4000
 
-CMD bundle exec jekyll serve --watch --drafts --future --incremental --port 4000 --host 0.0.0.0
+RUN useradd -m jekylluser \
+    && chown -R jekylluser:jekylluser /app
+USER jekylluser
+
+CMD bash -c 'rm -rf _site && bundle exec jekyll serve --watch --drafts --future --incremental --port 4000 --host 0.0.0.0'
 
 # --- Production image ---
 # blog is embedded in the image and can be served without a volume

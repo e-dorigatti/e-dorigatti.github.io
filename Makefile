@@ -4,7 +4,7 @@ docker-build-dev:
 	docker build -t e-dorigatti.github.io/blog/dev --target dev .
 
 docker-run-dev: docker-build-dev
-	docker run -p 4000:4000 -v $$(pwd):/app/blog e-dorigatti.github.io/blog/dev
+	docker run -it --rm -p 4000:4000 -v $$(pwd):/app/blog e-dorigatti.github.io/blog/dev #/bin/bash
 
 docker-build-prod:
 	docker build -t e-dorigatti.github.io/blog/prod --target prod .
