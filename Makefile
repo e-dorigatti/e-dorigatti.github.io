@@ -1,4 +1,16 @@
-.PHONY: build serve tags install
+.PHONY: build serve tags install docker-build-dev docker-run-dev docker-build-prod docker-run-prod update
+
+docker-build-dev:
+	docker build -t e-dorigatti.github.io/blog/dev --target dev .
+
+docker-run-dev: docker-build-dev
+	docker run -p 4000:4000 -v $$(pwd):/app/blog e-dorigatti.github.io/blog/dev
+
+docker-build-prod:
+	docker build -t e-dorigatti.github.io/blog/prod --target prod .
+
+docker-run-prod: docker-build-prod
+	docker run -p 4000:4000 e-dorigatti.github.io/blog/prod
 
 serve: build
 	bundle exec jekyll serve --drafts --future --incremental --host 0.0.0.0
