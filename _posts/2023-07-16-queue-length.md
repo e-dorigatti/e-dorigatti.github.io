@@ -195,7 +195,11 @@ $$
 Which should look familiar! It is indeed what we found above, except that now we are conditioning on the value of $X_1$.
 The reasoning based on exchangeability, while formally correct, does not apply to this problem because the first car of the queue is fixed.
 
-We can remove the dependence on $x$ by integrating it away:
+**UPDATE:** A commenter below helpfully pointed out that the mistake I made in the first part was assuming the events to be independent and multiplying the probabilities together.
+Indeed, considering whether $X_1\leq X_3$ only makes sense if we already know that $X_1\leq X_2$: if the second car is slower than the first, there will not be a third car in the queue.
+Condition on $X_1=x$, however, makes these events independent, allowing us to multiply the probabilities as we just did.
+
+Since we want to find the average queue length regardless of the speed of the first car, we nwo remove the dependence on $x$ by integrating it away:
 
 $$
 p(N=n)=\int_{-\infty}^{\infty} p(N=n|X_1=x)p(X_1=x)\text{d}x

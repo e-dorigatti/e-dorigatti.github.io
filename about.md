@@ -4,10 +4,9 @@ title: About
 permalink: /about/
 ---
 
-My name is Emilio, I am a PhD student in statistics applied to computational
-immunology. In other words, I use mathematics to study how the body fights
-diseases. Previously, I studied computer science and data science, and I have a
-minor degree in innovation & entrepreneurship.
+My name is Emilio, I am a data scientist at <a href="https://www.boehringer-ingelheim.com/">Boehringer Ingelheim</a>, a pharma company, where I use artificial intelligence to help my colleagues create safer drugs.
+I obtained my PhD at the LMU University in Munich, Germany, where I researched ways to <a href="{% post_url 2019-08-16-what_is_my_phd_about %}">design more effective cancer vaccines.</a>
+Previously I studied computer science and data science, and I have a minor degree in innovation & entrepreneurship.
 
 If you find mistakes, imprecisions, incomplete articles, feel like something is
 missing, want me to discuss a certain topic, want to ask a question, etc., do
