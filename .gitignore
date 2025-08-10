@@ -5,3 +5,6 @@ _site
 .bundle
 .vendor
 .jekyll-cache
+.ipynb_checkpoints
+__pycache__
+*.sw[po]
