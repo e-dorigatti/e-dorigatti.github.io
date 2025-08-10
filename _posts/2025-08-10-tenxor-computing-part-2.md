@@ -1,5 +1,5 @@
 ---
-date: 2025-08-18 00:00:00 +0200
+date: 2025-08-10 00:00:00 +0200
 title: " Tensor computing from scratch part II - Advanced operations"
 layout: post
 categories:
