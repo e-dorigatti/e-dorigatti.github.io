@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-My name is Emilio, I am a data scientist at <a href="https://www.boehringer-ingelheim.com/">Boehringer Ingelheim</a>, a pharma company, where I use artificial intelligence to help my colleagues create safer drugs.
+My name is Emilio, I work as a data scientist at <a href="https://www.boehringer-ingelheim.com/">Boehringer Ingelheim</a>, a pharma company, where I use artificial intelligence to develop new medicines and treatments.
 I obtained my PhD at the LMU University in Munich, Germany, where I researched ways to <a href="{% post_url 2019-08-16-what_is_my_phd_about %}">design more effective cancer vaccines.</a>
 Previously I studied computer science and data science, and I have a minor degree in innovation & entrepreneurship.
 
