@@ -38,8 +38,10 @@ Awards:
  - Winner of the Siemens Tech for Sustainability hackathon
 
 Publication Highlights:
+ - Dorigatti et al., 2023, Enhancing automated drug substance impurity structure elucidation from tandem mass spectra through transfer learning and domain knowledge, Digital Discovery
  - Drost et al., 2024, Predicting T cell receptor functionality against mutant epitopes, Cell Genomics
  - Dorigatti et al. 2023, Frequentist uncertainty quantification in semi-structured neural networks, AISTATS
  - Boniolo et al. 2021, Artificial Intelligence in Early Drug Development enabling Precision Medicine, Expert Opinion on Drug Discovery
  - Fritz et al. 2021, Combining Graph Neural Networks and Spatio-temporal Disease Models to Predict COVID-19 Cases in Germany, Nature Scientific Reports
  - Dorigatti et al. 2020, Joint epitope selection and spacer design for string-of-beads vaccines, ECCB (best poster award)
+
