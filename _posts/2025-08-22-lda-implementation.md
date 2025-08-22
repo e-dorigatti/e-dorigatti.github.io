@@ -3,7 +3,9 @@ date: 2025-08-22 00:00:00 +0200
 title: Simplest implementation of LDA topic modeling with collapsed Gibbs sampling
 layout: post
 categories:
- - Research
+ - Math
+ - Python
+ - Development
 ---
 
 
@@ -102,7 +104,7 @@ plt.show()
 
 
     
-![png](/attachments/lda_implementation/output_10_0.png){: .center-image}
+![png](/images/lda_implementation/output_10_0.png){: .center-image}
     
 
 
@@ -590,7 +592,7 @@ plt.show()
 
 
     
-![png](/attachments/lda_implementation/output_36_0.png){: .center-image}
+![png](/images/lda_implementation/output_36_0.png){: .center-image}
     
 
 
@@ -687,7 +689,7 @@ plot_matrix(
 
 
     
-![png](/attachments/lda_implementation/output_45_0.png){: .center-image}
+![png](/images/lda_implementation/output_45_0.png){: .center-image}
     
 
 
@@ -706,7 +708,7 @@ plot_matrix(
 
 
     
-![png](/attachments/lda_implementation/output_47_0.png){: .center-image}
+![png](/images/lda_implementation/output_47_0.png){: .center-image}
     
 
 
@@ -727,7 +729,7 @@ plot_matrix(
 
 
     
-![png](/attachments/lda_implementation/output_49_0.png){: .center-image}
+![png](/images/lda_implementation/output_49_0.png){: .center-image}
     
 
 
